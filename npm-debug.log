@@ -1,0 +1,2034 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'camera' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 verbose node symlink C:\Program Files (x86)\nodejs\\node.exe
+5 silly cache add args [ 'camera', null ]
+6 verbose cache add spec camera
+7 silly cache add parsed spec { raw: 'camera',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'camera',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed camera@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'camera', range: '*', hasData: false }
+12 silly mapToRegistry name camera
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/camera
+16 verbose addNameRange registry:https://registry.npmjs.org/camera not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/camera
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 3:33:56 PM
+20 verbose request id b4d92eddfd8ea5ab
+21 http request GET https://registry.npmjs.org/camera
+22 http 200 https://registry.npmjs.org/camera
+23 silly get cb [ 200,
+23 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly get     etag: '"78FELI42GIIAT9Y8IYUA8N800"',
+23 silly get     'content-type': 'application/json',
+23 silly get     'content-encoding': 'gzip',
+23 silly get     'cache-control': 'max-age=300',
+23 silly get     'content-length': '2729',
+23 silly get     'accept-ranges': 'bytes',
+23 silly get     date: 'Fri, 13 May 2016 10:04:00 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     age: '0',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-sin6922-SIN',
+23 silly get     'x-cache': 'MISS',
+23 silly get     'x-cache-hits': '0',
+23 silly get     'x-timer': 'S1463133840.661550,VS0,VE231',
+23 silly get     vary: 'Accept-Encoding' } ]
+24 verbose get saving camera to C:\Users\workstation1\AppData\Roaming\npm-cache\registry.npmjs.org\camera\.cache.json
+25 silly addNameRange number 2 { name: 'camera', range: '*', hasData: true }
+26 silly addNameRange versions [ 'camera', [ '0.0.1', '0.0.2', '0.0.3', '0.0.4', '0.0.5' ] ]
+27 verbose addNamed camera@0.0.5
+28 silly addNamed semver.valid 0.0.5
+29 silly addNamed semver.validRange 0.0.5
+30 silly mapToRegistry name camera
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/camera
+34 verbose addRemoteTarball https://registry.npmjs.org/camera/-/camera-0.0.5.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/camera/-/camera-0.0.5.tgz',
+35 verbose addRemoteTarball   '3ee44db8cb5993f315fd108c1d39f4038910359e' ]
+36 info retry fetch attempt 1 at 3:33:57 PM
+37 info attempt registry request try #1 at 3:33:57 PM
+38 http fetch GET https://registry.npmjs.org/camera/-/camera-0.0.5.tgz
+39 http fetch 200 https://registry.npmjs.org/camera/-/camera-0.0.5.tgz
+40 silly fetchAndShaCheck shasum 3ee44db8cb5993f315fd108c1d39f4038910359e
+41 verbose addTmpTarball C:\Users\WORKST~1\AppData\Local\Temp\npm-7064-de43d341\registry.npmjs.org\camera\-\camera-0.0.5.tgz not in flight; adding
+42 verbose addTmpTarball already have metadata; skipping unpack for camera@0.0.5
+43 silly cache afterAdd camera@0.0.5
+44 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\camera\0.0.5\package\package.json not in flight; writing
+45 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\camera\0.0.5\package\package.json written
+46 silly install resolved [ { name: 'camera',
+46 silly install resolved     description: 'Create readable streams from connected webcams',
+46 silly install resolved     version: '0.0.5',
+46 silly install resolved     homepage: 'http://github.com/wearefractal/camera',
+46 silly install resolved     repository: { type: 'git', url: 'git://github.com/wearefractal/camera.git' },
+46 silly install resolved     author:
+46 silly install resolved      { name: 'Fractal',
+46 silly install resolved        email: 'contact@wearefractal.com',
+46 silly install resolved        url: 'http://wearefractal.com/' },
+46 silly install resolved     main: './index.js',
+46 silly install resolved     dependencies:
+46 silly install resolved      { 'coffee-script': '~1.7.1',
+46 silly install resolved        opencv: '~0.5.0',
+46 silly install resolved        'event-stream': '~3.1.1' },
+46 silly install resolved     devDependencies: { mocha: '*', should: '*' },
+46 silly install resolved     scripts: { test: 'mocha --compilers coffee:coffee-script/register' },
+46 silly install resolved     engines: { node: '>= 0.4.0' },
+46 silly install resolved     licenses: [ [Object] ],
+46 silly install resolved     bugs: { url: 'https://github.com/wearefractal/camera/issues' },
+46 silly install resolved     _id: 'camera@0.0.5',
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: '3ee44db8cb5993f315fd108c1d39f4038910359e',
+46 silly install resolved        tarball: 'https://registry.npmjs.org/camera/-/camera-0.0.5.tgz' },
+46 silly install resolved     _from: 'camera@*',
+46 silly install resolved     _npmVersion: '1.4.4',
+46 silly install resolved     _npmUser: { name: 'fractal', email: 'contact@wearefractal.com' },
+46 silly install resolved     maintainers: [ [Object] ],
+46 silly install resolved     directories: {},
+46 silly install resolved     _shasum: '3ee44db8cb5993f315fd108c1d39f4038910359e',
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/camera/-/camera-0.0.5.tgz' } ]
+47 info install camera@0.0.5 into C:\Users\workstation1\AppData\Roaming\npm
+48 info installOne camera@0.0.5
+49 verbose installOne of camera to C:\Users\workstation1\AppData\Roaming\npm not in flight; installing
+50 verbose lock using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\camera-b7365ef27e95859f.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera
+51 silly install write writing camera 0.0.5 to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera
+52 silly cache addNamed cb camera@0.0.5
+53 verbose unbuild node_modules\camera
+54 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera is being purged from base C:\Users\workstation1\AppData\Roaming\npm
+55 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera
+56 verbose tar unpack C:\Users\workstation1\AppData\Roaming\npm-cache\camera\0.0.5\package.tgz
+57 verbose tar unpacking to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera
+58 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera is being purged
+59 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera
+60 silly gunzTarPerm modes [ '777', '666' ]
+61 silly gunzTarPerm extractEntry package.json
+62 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+63 silly gunzTarPerm extractEntry .npmignore
+64 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+65 silly gunzTarPerm extractEntry README.md
+66 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+67 silly gunzTarPerm extractEntry LICENSE
+68 silly gunzTarPerm modified mode [ 'LICENSE', 493, 511 ]
+69 silly gunzTarPerm extractEntry index.js
+70 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+71 silly gunzTarPerm extractEntry .travis.yml
+72 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+73 silly gunzTarPerm extractEntry lib/main.coffee
+74 silly gunzTarPerm modified mode [ 'lib/main.coffee', 420, 438 ]
+75 silly gunzTarPerm extractEntry test/main.coffee
+76 silly gunzTarPerm modified mode [ 'test/main.coffee', 420, 438 ]
+77 info preinstall camera@0.0.5
+78 silly prepareForInstallMany adding coffee-script@~1.7.1 from camera dependencies
+79 silly prepareForInstallMany adding opencv@~0.5.0 from camera dependencies
+80 silly prepareForInstallMany adding event-stream@~3.1.1 from camera dependencies
+81 silly cache add args [ 'coffee-script@~1.7.1', null ]
+82 verbose cache add spec coffee-script@~1.7.1
+83 silly cache add args [ 'opencv@~0.5.0', null ]
+84 verbose cache add spec opencv@~0.5.0
+85 silly cache add parsed spec { raw: 'coffee-script@~1.7.1',
+85 silly cache add   scope: null,
+85 silly cache add   name: 'coffee-script',
+85 silly cache add   rawSpec: '~1.7.1',
+85 silly cache add   spec: '>=1.7.1 <1.8.0',
+85 silly cache add   type: 'range' }
+86 verbose addNamed coffee-script@>=1.7.1 <1.8.0
+87 silly addNamed semver.valid null
+88 silly addNamed semver.validRange >=1.7.1 <1.8.0
+89 silly addNameRange { name: 'coffee-script',
+89 silly addNameRange   range: '>=1.7.1 <1.8.0',
+89 silly addNameRange   hasData: false }
+90 silly mapToRegistry name coffee-script
+91 silly mapToRegistry using default registry
+92 silly mapToRegistry registry https://registry.npmjs.org/
+93 silly mapToRegistry uri https://registry.npmjs.org/coffee-script
+94 verbose addNameRange registry:https://registry.npmjs.org/coffee-script not in flight; fetching
+95 silly cache add parsed spec { raw: 'opencv@~0.5.0',
+95 silly cache add   scope: null,
+95 silly cache add   name: 'opencv',
+95 silly cache add   rawSpec: '~0.5.0',
+95 silly cache add   spec: '>=0.5.0 <0.6.0',
+95 silly cache add   type: 'range' }
+96 verbose addNamed opencv@>=0.5.0 <0.6.0
+97 silly addNamed semver.valid null
+98 silly addNamed semver.validRange >=0.5.0 <0.6.0
+99 silly addNameRange { name: 'opencv', range: '>=0.5.0 <0.6.0', hasData: false }
+100 silly mapToRegistry name opencv
+101 silly mapToRegistry using default registry
+102 silly mapToRegistry registry https://registry.npmjs.org/
+103 silly mapToRegistry uri https://registry.npmjs.org/opencv
+104 verbose addNameRange registry:https://registry.npmjs.org/opencv not in flight; fetching
+105 silly cache add args [ 'event-stream@~3.1.1', null ]
+106 verbose cache add spec event-stream@~3.1.1
+107 silly cache add parsed spec { raw: 'event-stream@~3.1.1',
+107 silly cache add   scope: null,
+107 silly cache add   name: 'event-stream',
+107 silly cache add   rawSpec: '~3.1.1',
+107 silly cache add   spec: '>=3.1.1 <3.2.0',
+107 silly cache add   type: 'range' }
+108 verbose addNamed event-stream@>=3.1.1 <3.2.0
+109 silly addNamed semver.valid null
+110 silly addNamed semver.validRange >=3.1.1 <3.2.0
+111 silly addNameRange { name: 'event-stream', range: '>=3.1.1 <3.2.0', hasData: false }
+112 silly mapToRegistry name event-stream
+113 silly mapToRegistry using default registry
+114 silly mapToRegistry registry https://registry.npmjs.org/
+115 silly mapToRegistry uri https://registry.npmjs.org/event-stream
+116 verbose addNameRange registry:https://registry.npmjs.org/event-stream not in flight; fetching
+117 verbose request uri https://registry.npmjs.org/coffee-script
+118 verbose request no auth needed
+119 info attempt registry request try #1 at 3:33:58 PM
+120 http request GET https://registry.npmjs.org/coffee-script
+121 verbose request uri https://registry.npmjs.org/opencv
+122 verbose request no auth needed
+123 info attempt registry request try #1 at 3:33:58 PM
+124 http request GET https://registry.npmjs.org/opencv
+125 verbose request uri https://registry.npmjs.org/event-stream
+126 verbose request no auth needed
+127 info attempt registry request try #1 at 3:33:58 PM
+128 http request GET https://registry.npmjs.org/event-stream
+129 http 200 https://registry.npmjs.org/event-stream
+130 silly get cb [ 200,
+130 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+130 silly get     etag: '"AUOG1SVJBWVGP0YZWDCRLXBSN"',
+130 silly get     'content-type': 'application/json',
+130 silly get     'content-encoding': 'gzip',
+130 silly get     'cache-control': 'max-age=300',
+130 silly get     'content-length': '12706',
+130 silly get     'accept-ranges': 'bytes',
+130 silly get     date: 'Fri, 13 May 2016 10:04:02 GMT',
+130 silly get     via: '1.1 varnish',
+130 silly get     age: '40',
+130 silly get     connection: 'keep-alive',
+130 silly get     'x-served-by': 'cache-sin6922-SIN',
+130 silly get     'x-cache': 'HIT',
+130 silly get     'x-cache-hits': '1',
+130 silly get     'x-timer': 'S1463133842.859949,VS0,VE0',
+130 silly get     vary: 'Accept-Encoding' } ]
+131 verbose get saving event-stream to C:\Users\workstation1\AppData\Roaming\npm-cache\registry.npmjs.org\event-stream\.cache.json
+132 silly addNameRange number 2 { name: 'event-stream', range: '>=3.1.1 <3.2.0', hasData: true }
+133 silly addNameRange versions [ 'event-stream',
+133 silly addNameRange   [ '0.1.0',
+133 silly addNameRange     '0.2.0',
+133 silly addNameRange     '0.2.1',
+133 silly addNameRange     '0.3.0',
+133 silly addNameRange     '0.4.0',
+133 silly addNameRange     '0.5.0',
+133 silly addNameRange     '0.5.1',
+133 silly addNameRange     '0.5.2',
+133 silly addNameRange     '0.5.3',
+133 silly addNameRange     '0.6.0',
+133 silly addNameRange     '0.7.0',
+133 silly addNameRange     '0.8.0',
+133 silly addNameRange     '0.8.1',
+133 silly addNameRange     '0.8.2',
+133 silly addNameRange     '0.9.0',
+133 silly addNameRange     '0.9.1',
+133 silly addNameRange     '0.9.2',
+133 silly addNameRange     '0.9.3',
+133 silly addNameRange     '0.9.4',
+133 silly addNameRange     '0.9.6',
+133 silly addNameRange     '0.9.7',
+133 silly addNameRange     '0.9.8',
+133 silly addNameRange     '0.10.0',
+133 silly addNameRange     '1.0.0',
+133 silly addNameRange     '1.1.0',
+133 silly addNameRange     '1.2.0',
+133 silly addNameRange     '1.3.0',
+133 silly addNameRange     '1.3.1',
+133 silly addNameRange     '2.0.0',
+133 silly addNameRange     '2.0.1',
+133 silly addNameRange     '2.0.2',
+133 silly addNameRange     '2.0.3',
+133 silly addNameRange     '2.0.4',
+133 silly addNameRange     '2.0.9',
+133 silly addNameRange     '2.0.10',
+133 silly addNameRange     '2.1.0',
+133 silly addNameRange     '2.1.2',
+133 silly addNameRange     '2.1.3',
+133 silly addNameRange     '2.1.4',
+133 silly addNameRange     '2.1.5',
+133 silly addNameRange     '2.1.7',
+133 silly addNameRange     '2.1.8',
+133 silly addNameRange     '2.1.9',
+133 silly addNameRange     '2.2.0',
+133 silly addNameRange     '2.2.1',
+133 silly addNameRange     '2.2.2',
+133 silly addNameRange     '2.2.3',
+133 silly addNameRange     '3.0.0',
+133 silly addNameRange     '3.0.1',
+133 silly addNameRange     '3.0.2',
+133 silly addNameRange     '3.0.3',
+133 silly addNameRange     '3.0.4',
+133 silly addNameRange     '3.0.5',
+133 silly addNameRange     '3.0.6',
+133 silly addNameRange     '3.0.7',
+133 silly addNameRange     '3.0.8',
+133 silly addNameRange     '3.0.9',
+133 silly addNameRange     '3.0.10',
+133 silly addNameRange     '3.0.11',
+133 silly addNameRange     '3.0.12',
+133 silly addNameRange     '3.0.13',
+133 silly addNameRange     '3.0.14',
+133 silly addNameRange     '3.0.15',
+133 silly addNameRange     '3.0.16',
+133 silly addNameRange     '3.0.17',
+133 silly addNameRange     '3.0.18',
+133 silly addNameRange     '3.0.20',
+133 silly addNameRange     '3.1.0',
+133 silly addNameRange     '3.1.1',
+133 silly addNameRange     '3.1.2',
+133 silly addNameRange     '3.1.4',
+133 silly addNameRange     '3.1.5',
+133 silly addNameRange     '3.1.7',
+133 silly addNameRange     '3.2.0',
+133 silly addNameRange     '3.2.1',
+133 silly addNameRange     '3.2.2',
+133 silly addNameRange     '3.3.0',
+133 silly addNameRange     '3.3.1',
+133 silly addNameRange     '3.3.2' ] ]
+134 verbose addNamed event-stream@3.1.7
+135 silly addNamed semver.valid 3.1.7
+136 silly addNamed semver.validRange 3.1.7
+137 silly cache afterAdd event-stream@3.1.7
+138 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\event-stream\3.1.7\package\package.json not in flight; writing
+139 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\event-stream\3.1.7\package\package.json written
+140 http 200 https://registry.npmjs.org/coffee-script
+141 silly get cb [ 200,
+141 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+141 silly get     etag: '"8TCAF9MCAIKNBJ4QK3J2KMSXT"',
+141 silly get     'content-type': 'application/json',
+141 silly get     'cache-control': 'max-age=300',
+141 silly get     'content-length': '41836',
+141 silly get     'accept-ranges': 'bytes',
+141 silly get     date: 'Fri, 13 May 2016 10:04:02 GMT',
+141 silly get     via: '1.1 varnish',
+141 silly get     age: '0',
+141 silly get     connection: 'keep-alive',
+141 silly get     'x-served-by': 'cache-sin6922-SIN',
+141 silly get     'x-cache': 'HIT',
+141 silly get     'x-cache-hits': '1',
+141 silly get     'x-timer': 'S1463133842.767494,VS0,VE221',
+141 silly get     vary: 'Accept-Encoding' } ]
+142 verbose get saving coffee-script to C:\Users\workstation1\AppData\Roaming\npm-cache\registry.npmjs.org\coffee-script\.cache.json
+143 silly addNameRange number 2 { name: 'coffee-script', range: '>=1.7.1 <1.8.0', hasData: true }
+144 silly addNameRange versions [ 'coffee-script',
+144 silly addNameRange   [ '0.7.0',
+144 silly addNameRange     '0.7.1',
+144 silly addNameRange     '0.7.2',
+144 silly addNameRange     '0.9.0',
+144 silly addNameRange     '0.9.1',
+144 silly addNameRange     '0.9.2',
+144 silly addNameRange     '0.9.3',
+144 silly addNameRange     '0.9.4',
+144 silly addNameRange     '0.9.5',
+144 silly addNameRange     '0.9.6',
+144 silly addNameRange     '1.0.0',
+144 silly addNameRange     '1.0.1',
+144 silly addNameRange     '1.1.0',
+144 silly addNameRange     '1.1.1',
+144 silly addNameRange     '1.1.2',
+144 silly addNameRange     '1.1.3',
+144 silly addNameRange     '1.2.0',
+144 silly addNameRange     '1.3.0',
+144 silly addNameRange     '1.3.1',
+144 silly addNameRange     '1.3.2',
+144 silly addNameRange     '1.3.3',
+144 silly addNameRange     '1.4.0',
+144 silly addNameRange     '1.5.0',
+144 silly addNameRange     '1.6.0',
+144 silly addNameRange     '1.6.1',
+144 silly addNameRange     '1.6.2',
+144 silly addNameRange     '1.6.3',
+144 silly addNameRange     '1.7.0',
+144 silly addNameRange     '1.7.1',
+144 silly addNameRange     '1.8.0',
+144 silly addNameRange     '1.9.0',
+144 silly addNameRange     '1.9.1',
+144 silly addNameRange     '1.9.2',
+144 silly addNameRange     '1.9.3',
+144 silly addNameRange     '1.10.0' ] ]
+145 verbose addNamed coffee-script@1.7.1
+146 silly addNamed semver.valid 1.7.1
+147 silly addNamed semver.validRange 1.7.1
+148 silly mapToRegistry name coffee-script
+149 silly mapToRegistry using default registry
+150 silly mapToRegistry registry https://registry.npmjs.org/
+151 silly mapToRegistry uri https://registry.npmjs.org/coffee-script
+152 verbose addRemoteTarball https://registry.npmjs.org/coffee-script/-/coffee-script-1.7.1.tgz not in flight; adding
+153 verbose addRemoteTarball [ 'https://registry.npmjs.org/coffee-script/-/coffee-script-1.7.1.tgz',
+153 verbose addRemoteTarball   '62996a861780c75e6d5069d13822723b73404bfc' ]
+154 info retry fetch attempt 1 at 3:33:59 PM
+155 info attempt registry request try #1 at 3:33:59 PM
+156 http fetch GET https://registry.npmjs.org/coffee-script/-/coffee-script-1.7.1.tgz
+157 http 200 https://registry.npmjs.org/opencv
+158 silly get cb [ 200,
+158 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+158 silly get     etag: '"6Y80Y1DYNNQYI5H2A2Y1H2BMF"',
+158 silly get     'content-type': 'application/json',
+158 silly get     'cache-control': 'max-age=300',
+158 silly get     'content-length': '33301',
+158 silly get     'accept-ranges': 'bytes',
+158 silly get     date: 'Fri, 13 May 2016 10:04:03 GMT',
+158 silly get     via: '1.1 varnish',
+158 silly get     age: '0',
+158 silly get     connection: 'keep-alive',
+158 silly get     'x-served-by': 'cache-sin6926-SIN',
+158 silly get     'x-cache': 'MISS',
+158 silly get     'x-cache-hits': '0',
+158 silly get     'x-timer': 'S1463133842.765818,VS0,VE484',
+158 silly get     vary: 'Accept-Encoding' } ]
+159 verbose get saving opencv to C:\Users\workstation1\AppData\Roaming\npm-cache\registry.npmjs.org\opencv\.cache.json
+160 silly addNameRange number 2 { name: 'opencv', range: '>=0.5.0 <0.6.0', hasData: true }
+161 silly addNameRange versions [ 'opencv',
+161 silly addNameRange   [ '0.0.1',
+161 silly addNameRange     '0.0.2',
+161 silly addNameRange     '0.0.3',
+161 silly addNameRange     '0.0.4',
+161 silly addNameRange     '0.0.5',
+161 silly addNameRange     '0.0.6',
+161 silly addNameRange     '0.0.7',
+161 silly addNameRange     '0.0.8',
+161 silly addNameRange     '0.0.9',
+161 silly addNameRange     '0.0.10',
+161 silly addNameRange     '0.0.11',
+161 silly addNameRange     '0.0.12',
+161 silly addNameRange     '0.1.0',
+161 silly addNameRange     '0.2.0',
+161 silly addNameRange     '0.3.0',
+161 silly addNameRange     '0.3.1',
+161 silly addNameRange     '0.4.0',
+161 silly addNameRange     '0.5.0',
+161 silly addNameRange     '0.6.0',
+161 silly addNameRange     '0.7.0',
+161 silly addNameRange     '1.0.0',
+161 silly addNameRange     '2.0.0',
+161 silly addNameRange     '3.0.0',
+161 silly addNameRange     '3.1.0',
+161 silly addNameRange     '3.2.0',
+161 silly addNameRange     '4.0.0',
+161 silly addNameRange     '5.0.0' ] ]
+162 verbose addNamed opencv@0.5.0
+163 silly addNamed semver.valid 0.5.0
+164 silly addNamed semver.validRange 0.5.0
+165 silly mapToRegistry name opencv
+166 silly mapToRegistry using default registry
+167 silly mapToRegistry registry https://registry.npmjs.org/
+168 silly mapToRegistry uri https://registry.npmjs.org/opencv
+169 verbose addRemoteTarball https://registry.npmjs.org/opencv/-/opencv-0.5.0.tgz not in flight; adding
+170 verbose addRemoteTarball [ 'https://registry.npmjs.org/opencv/-/opencv-0.5.0.tgz',
+170 verbose addRemoteTarball   'd54cefbe5d78ccacff62fd91732691190d438c9d' ]
+171 info retry fetch attempt 1 at 3:33:59 PM
+172 info attempt registry request try #1 at 3:33:59 PM
+173 http fetch GET https://registry.npmjs.org/opencv/-/opencv-0.5.0.tgz
+174 http fetch 200 https://registry.npmjs.org/coffee-script/-/coffee-script-1.7.1.tgz
+175 http fetch 200 https://registry.npmjs.org/opencv/-/opencv-0.5.0.tgz
+176 silly fetchAndShaCheck shasum 62996a861780c75e6d5069d13822723b73404bfc
+177 verbose addTmpTarball C:\Users\WORKST~1\AppData\Local\Temp\npm-7064-de43d341\registry.npmjs.org\coffee-script\-\coffee-script-1.7.1.tgz not in flight; adding
+178 verbose addTmpTarball already have metadata; skipping unpack for coffee-script@1.7.1
+179 silly cache afterAdd coffee-script@1.7.1
+180 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\coffee-script\1.7.1\package\package.json not in flight; writing
+181 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\coffee-script\1.7.1\package\package.json written
+182 silly fetchAndShaCheck shasum d54cefbe5d78ccacff62fd91732691190d438c9d
+183 verbose addTmpTarball C:\Users\WORKST~1\AppData\Local\Temp\npm-7064-de43d341\registry.npmjs.org\opencv\-\opencv-0.5.0.tgz not in flight; adding
+184 verbose addTmpTarball already have metadata; skipping unpack for opencv@0.5.0
+185 silly cache afterAdd opencv@0.5.0
+186 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\opencv\0.5.0\package\package.json not in flight; writing
+187 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\opencv\0.5.0\package\package.json written
+188 silly install resolved [ { name: 'event-stream',
+188 silly install resolved     version: '3.1.7',
+188 silly install resolved     description: 'construct pipes of streams of events',
+188 silly install resolved     homepage: 'http://github.com/dominictarr/event-stream',
+188 silly install resolved     repository:
+188 silly install resolved      { type: 'git',
+188 silly install resolved        url: 'git://github.com/dominictarr/event-stream.git' },
+188 silly install resolved     dependencies:
+188 silly install resolved      { through: '~2.3.1',
+188 silly install resolved        duplexer: '~0.1.1',
+188 silly install resolved        from: '~0',
+188 silly install resolved        'map-stream': '~0.1.0',
+188 silly install resolved        'pause-stream': '0.0.11',
+188 silly install resolved        split: '0.2',
+188 silly install resolved        'stream-combiner': '~0.0.4' },
+188 silly install resolved     devDependencies:
+188 silly install resolved      { asynct: '*',
+188 silly install resolved        'it-is': '1',
+188 silly install resolved        ubelt: '~3.2.2',
+188 silly install resolved        'stream-spec': '~0.3.5',
+188 silly install resolved        tape: '~2.3.0' },
+188 silly install resolved     scripts:
+188 silly install resolved      { test: 'asynct test/',
+188 silly install resolved        test_tap: 'set -e; for t in test/*.js; do node $t; done' },
+188 silly install resolved     testling: { files: 'test/*.js', browsers: [Object] },
+188 silly install resolved     author:
+188 silly install resolved      { name: 'Dominic Tarr',
+188 silly install resolved        email: 'dominic.tarr@gmail.com',
+188 silly install resolved        url: 'http://bit.ly/dominictarr' },
+188 silly install resolved     readme: '# EventStream\n\n<img src=https://secure.travis-ci.org/dominictarr/event-stream.png?branch=master>\n\n[![browser status](http://ci.testling.com/dominictarr/event-stream.png)]\n(http://ci.testling.com/dominictarr/event-stream)\n\n[Streams](http://nodejs.org/api/stream.html "Stream") are node\'s best and most misunderstood idea, and \n_<em>EventStream</em>_ is a toolkit to make creating and working with streams <em>easy</em>.  \n\nNormally, streams are only used for IO,  \nbut in event stream we send all kinds of objects down the pipe.  \nIf your application\'s <em>input</em> and <em>output</em> are streams,  \nshouldn\'t the <em>throughput</em> be a stream too?  \n\nThe *EventStream* functions resemble the array functions,  \nbecause Streams are like Arrays, but laid out in time, rather than in memory.  \n\n<em>All the `event-stream` functions return instances of `Stream`</em>.\n\n`event-stream` creates \n[0.8 streams](https://github.com/joyent/node/blob/v0.8/doc/api/stream.markdown)\n, which are compatible with [0.10 streams](http://nodejs.org/api/stream.html "Stream")\n\n>NOTE: I shall use the term <em>"through stream"</em> to refer to a stream that is writable <em>and</em> readable.  \n\n###[simple example](https://github.com/dominictarr/event-stream/blob/master/examples/pretty.js):\n\n``` js\n\n//pretty.js\n\nif(!module.parent) {\n  var es = require(\'event-stream\')\n  var inspect = require(\'util\').inspect\n\n  process.stdin                        //connect streams together with `pipe`\n    .pipe(es.split())                  //split stream to break on newlines\n    .pipe(es.map(function (data, cb) { //turn this async function into a stream\n      cb(null\n        , inspect(JSON.parse(data)))   //render it nicely\n    }))\n    .pipe(process.stdout)              // pipe it to stdout !\n}\n```\nrun it ...\n\n``` bash  \ncurl -sS registry.npmjs.org/event-stream | node pretty.js\n```\n \n[node Stream documentation](http://nodejs.org/api/stream.html)\n\n## through (write?, end?)\n\nRe-emits data synchronously. Easy way to create synchronous through streams.\nPass in optional `write` and `end` methods. They will be called in the \ncontext of the stream. Use `this.pause()` and `this.resume()` to manage flow.\nCheck `this.paused` to see current flow state. (write always returns `!this.paused`)\n\nthis function is the basis for most of the synchronous streams in `event-stream`.\n\n``` js\n\nes.through(function write(data) {\n    this.emit(\'data\', data)\n    //this.pause() \n  },\n  function end () { //optional\n    this.emit(\'end\')\n  })\n\n```\n\n##map (asyncFunction)\n\nCreate a through stream from an asynchronous function.  \n\n``` js\nvar es = require(\'event-stream\')\n\nes.map(function (data, callback) {\n  //transform data\n  // ...\n  callback(null, data)\n})\n\n```\n\nEach map MUST call the callback. It may callback with data, with an error or with no arguments, \n\n  * `callback()` drop this data.  \n    this makes the map work like `filter`,  \n    note:`callback(null,null)` is not the same, and will emit `null`\n\n  * `callback(null, newData)` turn data into newData\n    \n  * `callback(error)` emit an error for this item.\n\n>Note: if a callback is not called, `map` will think that it is still being processed,   \n>every call must be answered or the stream will not know when to end.  \n>\n>Also, if the callback is called more than once, every call but the first will be ignored.\n\n## mapSync (syncFunction)\n\nSame as `map`, but the callback is called synchronously. Based on `es.through`\n\n## split (matcher)\n\nBreak up a stream and reassemble it so that each line is a chunk. matcher may be a `String`, or a `RegExp` \n\nExample, read every line in a file ...\n\n``` js\nfs.createReadStream(file, {flags: \'r\'})\n  .pipe(es.split())\n  .pipe(es.map(function (line, cb) {\n    //do something with the line \n    cb(null, line)\n  }))\n```\n\n`split` takes the same arguments as `string.split` except it defaults to \'\\n\' instead of \',\', and the optional `limit` parameter is ignored.\n[String#split](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/split)\n\n## join (separator)\n\nCreate a through stream that emits `separator` between each chunk, just like Array#join.\n\n(for legacy reasons, if you pass a callback instead of a string, join is a synonym for `es.wait`)\n\n## merge (stream1,...,streamN)\n> concat → merge\n\nMerges streams into one and returns it.\nIncoming data will be emitted as soon it comes into - no ordering will be applied (for example: `data1 data1 data2 data1 data2` - where `data1` and `data2` is data from two streams).\nCounts how many streams was passed to it and emits end only when all streams emitted end.\n\n```js\nes.merge(\n  process.stdout,\n  process.stderr\n).pipe(fs.createWriteStream(\'output.log\'));\n```\n\n## replace (from, to)\n\nReplace all occurrences of `from` with `to`. `from` may be a `String` or a `RegExp`.  \nWorks just like `string.split(from).join(to)`, but streaming.\n\n\n## parse\n\nConvenience function for parsing JSON chunks. For newline separated JSON,\nuse with `es.split`\n\n``` js\nfs.createReadStream(filename)\n  .pipe(es.split()) //defaults to lines.\n  .pipe(es.parse())\n```\n\n## stringify\n\nconvert javascript objects into lines of text. The text will have whitespace escaped and have a `\\n` appended, so it will be compatible with `es.parse`\n\n``` js\nobjectStream\n  .pipe(es.stringify())\n  .pipe(fs.createWriteStream(filename))\n```\n\n##readable (asyncFunction) \n\ncreate a readable stream (that respects pause) from an async function.  \nwhile the stream is not paused,  \nthe function will be polled with `(count, callback)`,  \nand `this`  will be the readable stream.\n\n``` js\n\nes.readable(function (count, callback) {\n  if(streamHasEnded)\n    return this.emit(\'end\')\n  \n  //...\n  \n  this.emit(\'data\', data) //use this way to emit multiple chunks per call.\n      \n  callback() // you MUST always call the callback eventually.\n             // the function will not be called again until you do this.\n})\n```\nyou can also pass the data and the error to the callback.  \nyou may only call the callback once.  \ncalling the same callback more than once will have no effect.  \n\n##readArray (array)\n\nCreate a readable stream from an Array.\n\nJust emit each item as a data event, respecting `pause` and `resume`.\n\n``` js\n  var es = require(\'event-stream\')\n    , reader = es.readArray([1,2,3])\n\n  reader.pipe(...)\n```\n\n## writeArray (callback)\n\ncreate a writeable stream from a callback,  \nall `data` events are stored in an array, which is passed to the callback when the stream ends.\n\n``` js\n  var es = require(\'event-stream\')\n    , reader = es.readArray([1, 2, 3])\n    , writer = es.writeArray(function (err, array){\n      //array deepEqual [1, 2, 3]\n    })\n\n  reader.pipe(writer)\n```\n\n## pause  () \n\nA stream that buffers all chunks when paused.\n\n\n``` js\n  var ps = es.pause()\n  ps.pause() //buffer the stream, also do not allow \'end\' \n  ps.resume() //allow chunks through\n```\n\n## duplex (writeStream, readStream)\n\nTakes a writable stream and a readable stream and makes them appear as a readable writable stream.\n\nIt is assumed that the two streams are connected to each other in some way.  \n\n(This is used by `pipeline` and `child`.)\n\n``` js\n  var grep = cp.exec(\'grep Stream\')\n\n  es.duplex(grep.stdin, grep.stdout)\n```\n\n## child (child_process)\n\nCreate a through stream from a child process ...\n\n``` js\n  var cp = require(\'child_process\')\n\n  es.child(cp.exec(\'grep Stream\')) // a through stream\n\n```\n\n## wait (callback)\n\nwaits for stream to emit \'end\'.\njoins chunks of a stream into a single string. \ntakes an optional callback, which will be passed the \ncomplete string when it receives the \'end\' event.\n\nalso, emits a single \'data\' event.\n\n``` js\n\nreadStream.pipe(es.wait(function (err, text) {\n  // have complete text here.\n}))\n\n```\n\n# Other Stream Modules\n\nThese modules are not included as a part of *EventStream* but may be\nuseful when working with streams.\n\n## [reduce (syncFunction, initial)](https://github.com/parshap/node-stream-reduce)\n\nLike `Array.prototype.reduce` but for streams. Given a sync reduce\nfunction and an initial value it will return a through stream that emits\na single data event with the reduced value once the input stream ends.\n\n``` js\nvar reduce = require("stream-reduce");\nprocess.stdin.pipe(reduce(function(acc, data) {\n  return acc + data.length;\n}, 0)).on("data", function(length) {\n  console.log("stdin size:", length);\n});\n```\n',
+188 silly install resolved     readmeFilename: 'readme.markdown',
+188 silly install resolved     bugs: { url: 'https://github.com/dominictarr/event-stream/issues' },
+188 silly install resolved     _id: 'event-stream@3.1.7',
+188 silly install resolved     _shasum: 'b4c540012d0fe1498420f3d8946008db6393c37a',
+188 silly install resolved     _from: 'event-stream@>=3.1.1 <3.2.0',
+188 silly install resolved     _resolved: 'https://registry.npmjs.org/event-stream/-/event-stream-3.1.7.tgz' },
+188 silly install resolved   { name: 'coffee-script',
+188 silly install resolved     description: 'Unfancy JavaScript',
+188 silly install resolved     keywords: [ 'javascript', 'language', 'coffeescript', 'compiler' ],
+188 silly install resolved     author: { name: 'Jeremy Ashkenas' },
+188 silly install resolved     version: '1.7.1',
+188 silly install resolved     license: 'MIT',
+188 silly install resolved     engines: { node: '>=0.8.0' },
+188 silly install resolved     directories: { lib: './lib/coffee-script' },
+188 silly install resolved     main: './lib/coffee-script/coffee-script',
+188 silly install resolved     bin: { coffee: './bin/coffee', cake: './bin/cake' },
+188 silly install resolved     scripts: { test: 'node ./bin/cake test' },
+188 silly install resolved     homepage: 'http://coffeescript.org',
+188 silly install resolved     bugs: { url: 'https://github.com/jashkenas/coffee-script/issues' },
+188 silly install resolved     repository:
+188 silly install resolved      { type: 'git',
+188 silly install resolved        url: 'git://github.com/jashkenas/coffee-script.git' },
+188 silly install resolved     devDependencies:
+188 silly install resolved      { 'uglify-js': '~2.2',
+188 silly install resolved        jison: '>=0.2.0',
+188 silly install resolved        'highlight.js': '~8.0.0',
+188 silly install resolved        underscore: '~1.5.2' },
+188 silly install resolved     dependencies: { mkdirp: '~0.3.5' },
+188 silly install resolved     _id: 'coffee-script@1.7.1',
+188 silly install resolved     dist:
+188 silly install resolved      { shasum: '62996a861780c75e6d5069d13822723b73404bfc',
+188 silly install resolved        tarball: 'https://registry.npmjs.org/coffee-script/-/coffee-script-1.7.1.tgz' },
+188 silly install resolved     _from: 'coffee-script@>=1.7.1 <1.8.0',
+188 silly install resolved     _npmVersion: '1.3.24',
+188 silly install resolved     _npmUser: { name: 'michaelficarra', email: 'npm@michael.ficarra.me' },
+188 silly install resolved     maintainers: [ [Object] ],
+188 silly install resolved     _shasum: '62996a861780c75e6d5069d13822723b73404bfc',
+188 silly install resolved     _resolved: 'https://registry.npmjs.org/coffee-script/-/coffee-script-1.7.1.tgz' },
+188 silly install resolved   { name: 'opencv',
+188 silly install resolved     description: 'Node Bindings to OpenCV',
+188 silly install resolved     author: { name: 'Peter Braden', email: 'peterbraden@peterbraden.co.uk' },
+188 silly install resolved     dependencies: { buffers: '0.1.1' },
+188 silly install resolved     version: '0.5.0',
+188 silly install resolved     devDependencies: { vows: '*' },
+188 silly install resolved     engines: { node: '>=0.4.1' },
+188 silly install resolved     license: 'MIT',
+188 silly install resolved     scripts:
+188 silly install resolved      { preinstall: 'node-gyp clean rebuild',
+188 silly install resolved        test: 'vows test/unit.js' },
+188 silly install resolved     keywords: [ 'opencv', 'computer', 'vision', 'quadrocopter' ],
+188 silly install resolved     main: './lib/opencv',
+188 silly install resolved     repository:
+188 silly install resolved      { type: 'git',
+188 silly install resolved        url: 'https://github.com/peterbraden/node-opencv.git' },
+188 silly install resolved     bugs: { url: 'https://github.com/peterbraden/node-opencv/issues' },
+188 silly install resolved     homepage: 'https://github.com/peterbraden/node-opencv',
+188 silly install resolved     _id: 'opencv@0.5.0',
+188 silly install resolved     dist:
+188 silly install resolved      { shasum: 'd54cefbe5d78ccacff62fd91732691190d438c9d',
+188 silly install resolved        tarball: 'https://registry.npmjs.org/opencv/-/opencv-0.5.0.tgz' },
+188 silly install resolved     _from: 'opencv@>=0.5.0 <0.6.0',
+188 silly install resolved     _npmVersion: '1.4.3',
+188 silly install resolved     _npmUser: { name: 'peterbraden', email: 'peterbraden@peterbraden.co.uk' },
+188 silly install resolved     maintainers: [ [Object] ],
+188 silly install resolved     directories: {},
+188 silly install resolved     _shasum: 'd54cefbe5d78ccacff62fd91732691190d438c9d',
+188 silly install resolved     _resolved: 'https://registry.npmjs.org/opencv/-/opencv-0.5.0.tgz' } ]
+189 info install event-stream@3.1.7 into C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera
+190 info install coffee-script@1.7.1 into C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera
+191 info install opencv@0.5.0 into C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera
+192 info installOne event-stream@3.1.7
+193 verbose installOne of event-stream to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera not in flight; installing
+194 info installOne coffee-script@1.7.1
+195 verbose installOne of coffee-script to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera not in flight; installing
+196 info installOne opencv@0.5.0
+197 verbose installOne of opencv to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera not in flight; installing
+198 verbose lock using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\event-stream-6180c75ccca4b74a.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream
+199 verbose lock using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\coffee-script-20be04cdcbc0a501.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\coffee-script
+200 verbose lock using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\opencv-41302b25a586bc93.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\opencv
+201 silly install write writing event-stream 3.1.7 to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream
+202 silly cache addNamed cb event-stream@3.1.7
+203 verbose unbuild node_modules\camera\node_modules\event-stream
+204 silly install write writing coffee-script 1.7.1 to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\coffee-script
+205 silly install write writing opencv 0.5.0 to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\opencv
+206 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream is being purged from base C:\Users\workstation1\AppData\Roaming\npm
+207 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream
+208 verbose tar unpack C:\Users\workstation1\AppData\Roaming\npm-cache\event-stream\3.1.7\package.tgz
+209 verbose tar unpacking to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream
+210 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream is being purged
+211 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream
+212 silly cache addNamed cb opencv@0.5.0
+213 verbose unbuild node_modules\camera\node_modules\opencv
+214 silly gunzTarPerm modes [ '777', '666' ]
+215 silly cache addNamed cb coffee-script@1.7.1
+216 verbose unbuild node_modules\camera\node_modules\coffee-script
+217 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\opencv is being purged from base C:\Users\workstation1\AppData\Roaming\npm
+218 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\opencv
+219 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\coffee-script is being purged from base C:\Users\workstation1\AppData\Roaming\npm
+220 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\coffee-script
+221 verbose tar unpack C:\Users\workstation1\AppData\Roaming\npm-cache\opencv\0.5.0\package.tgz
+222 verbose tar unpacking to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\opencv
+223 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\opencv is being purged
+224 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\opencv
+225 verbose tar unpack C:\Users\workstation1\AppData\Roaming\npm-cache\coffee-script\1.7.1\package.tgz
+226 verbose tar unpacking to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\coffee-script
+227 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\coffee-script is being purged
+228 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\coffee-script
+229 silly gunzTarPerm modes [ '777', '666' ]
+230 silly gunzTarPerm modes [ '777', '666' ]
+231 silly gunzTarPerm extractEntry package.json
+232 silly gunzTarPerm modified mode [ 'package.json', 493, 511 ]
+233 silly gunzTarPerm extractEntry package.json
+234 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+235 silly gunzTarPerm extractEntry package.json
+236 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+237 silly gunzTarPerm extractEntry .npmignore
+238 silly gunzTarPerm modified mode [ '.npmignore', 493, 511 ]
+239 silly gunzTarPerm extractEntry README.md
+240 silly gunzTarPerm modified mode [ 'README.md', 493, 511 ]
+241 silly gunzTarPerm extractEntry .npmignore
+242 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+243 silly gunzTarPerm extractEntry README
+244 silly gunzTarPerm modified mode [ 'README', 420, 438 ]
+245 silly gunzTarPerm extractEntry .npmignore
+246 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+247 silly gunzTarPerm extractEntry LICENCE
+248 silly gunzTarPerm modified mode [ 'LICENCE', 420, 438 ]
+249 silly gunzTarPerm extractEntry LICENSE
+250 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+251 silly gunzTarPerm extractEntry register.js
+252 silly gunzTarPerm modified mode [ 'register.js', 420, 438 ]
+253 silly gunzTarPerm extractEntry binding.gyp
+254 silly gunzTarPerm modified mode [ 'binding.gyp', 493, 511 ]
+255 silly gunzTarPerm extractEntry .travis.yml
+256 silly gunzTarPerm modified mode [ '.travis.yml', 493, 511 ]
+257 silly gunzTarPerm extractEntry index.js
+258 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+259 silly gunzTarPerm extractEntry .travis.yml
+260 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+261 silly gunzTarPerm extractEntry CNAME
+262 silly gunzTarPerm modified mode [ 'CNAME', 420, 438 ]
+263 silly gunzTarPerm extractEntry CONTRIBUTING.md
+264 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 420, 438 ]
+265 silly gunzTarPerm extractEntry Dockerfile
+266 silly gunzTarPerm modified mode [ 'Dockerfile', 420, 438 ]
+267 silly gunzTarPerm extractEntry MIT-LICENSE.txt
+268 silly gunzTarPerm modified mode [ 'MIT-LICENSE.txt', 420, 438 ]
+269 silly gunzTarPerm extractEntry examples/pretty.js
+270 silly gunzTarPerm modified mode [ 'examples/pretty.js', 420, 438 ]
+271 silly gunzTarPerm extractEntry readme.markdown
+272 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 438 ]
+273 silly gunzTarPerm extractEntry bin/cake
+274 silly gunzTarPerm modified mode [ 'bin/cake', 493, 511 ]
+275 silly gunzTarPerm extractEntry bin/coffee
+276 silly gunzTarPerm modified mode [ 'bin/coffee', 493, 511 ]
+277 silly gunzTarPerm extractEntry test/connect.asynct.js
+278 silly gunzTarPerm modified mode [ 'test/connect.asynct.js', 420, 438 ]
+279 silly gunzTarPerm extractEntry .README.md.un~
+280 silly gunzTarPerm modified mode [ '.README.md.un~', 493, 511 ]
+281 silly gunzTarPerm extractEntry .binding.gyp.un~
+282 silly gunzTarPerm modified mode [ '.binding.gyp.un~', 493, 511 ]
+283 silly gunzTarPerm extractEntry lib/coffee-script/browser.js
+284 silly gunzTarPerm modified mode [ 'lib/coffee-script/browser.js', 420, 438 ]
+285 silly gunzTarPerm extractEntry lib/coffee-script/grammar.js
+286 silly gunzTarPerm modified mode [ 'lib/coffee-script/grammar.js', 420, 438 ]
+287 silly gunzTarPerm extractEntry lib/coffee-script/helpers.js
+288 silly gunzTarPerm modified mode [ 'lib/coffee-script/helpers.js', 420, 438 ]
+289 silly gunzTarPerm extractEntry lib/coffee-script/index.js
+290 silly gunzTarPerm modified mode [ 'lib/coffee-script/index.js', 420, 438 ]
+291 silly gunzTarPerm extractEntry data/haarcascade_mcs_eyepair_big.xml
+292 silly gunzTarPerm modified mode [ 'data/haarcascade_mcs_eyepair_big.xml', 493, 511 ]
+293 silly gunzTarPerm extractEntry data/haarcascade_eye.xml
+294 silly gunzTarPerm modified mode [ 'data/haarcascade_eye.xml', 493, 511 ]
+295 silly gunzTarPerm extractEntry test/merge.asynct.js
+296 silly gunzTarPerm modified mode [ 'test/merge.asynct.js', 420, 438 ]
+297 silly gunzTarPerm extractEntry test/pause.asynct.js
+298 silly gunzTarPerm modified mode [ 'test/pause.asynct.js', 420, 438 ]
+299 silly gunzTarPerm extractEntry lib/coffee-script/lexer.js
+300 silly gunzTarPerm modified mode [ 'lib/coffee-script/lexer.js', 420, 438 ]
+301 silly gunzTarPerm extractEntry lib/coffee-script/command.js
+302 silly gunzTarPerm modified mode [ 'lib/coffee-script/command.js', 420, 438 ]
+303 silly gunzTarPerm extractEntry test/pipeline.asynct.js
+304 silly gunzTarPerm modified mode [ 'test/pipeline.asynct.js', 420, 438 ]
+305 silly gunzTarPerm extractEntry test/readArray.asynct.js
+306 silly gunzTarPerm modified mode [ 'test/readArray.asynct.js', 420, 438 ]
+307 silly gunzTarPerm extractEntry data/haarcascade_frontalface_alt.xml
+308 silly gunzTarPerm modified mode [ 'data/haarcascade_frontalface_alt.xml', 493, 511 ]
+309 silly gunzTarPerm extractEntry lib/coffee-script/optparse.js
+310 silly gunzTarPerm modified mode [ 'lib/coffee-script/optparse.js', 420, 438 ]
+311 silly gunzTarPerm extractEntry lib/coffee-script/parser.js
+312 silly gunzTarPerm modified mode [ 'lib/coffee-script/parser.js', 493, 511 ]
+313 silly gunzTarPerm extractEntry test/stringify.js
+314 silly gunzTarPerm modified mode [ 'test/stringify.js', 420, 438 ]
+315 silly gunzTarPerm extractEntry test/replace.asynct.js
+316 silly gunzTarPerm modified mode [ 'test/replace.asynct.js', 420, 438 ]
+317 silly gunzTarPerm extractEntry lib/coffee-script/register.js
+318 silly gunzTarPerm modified mode [ 'lib/coffee-script/register.js', 420, 438 ]
+319 silly gunzTarPerm extractEntry lib/coffee-script/repl.js
+320 silly gunzTarPerm modified mode [ 'lib/coffee-script/repl.js', 420, 438 ]
+321 silly gunzTarPerm extractEntry lib/coffee-script/rewriter.js
+322 silly gunzTarPerm modified mode [ 'lib/coffee-script/rewriter.js', 420, 438 ]
+323 silly gunzTarPerm extractEntry lib/coffee-script/coffee-script.js
+324 silly gunzTarPerm modified mode [ 'lib/coffee-script/coffee-script.js', 420, 438 ]
+325 silly gunzTarPerm extractEntry test/simple-map.asynct.js
+326 silly gunzTarPerm modified mode [ 'test/simple-map.asynct.js', 420, 438 ]
+327 silly gunzTarPerm extractEntry test/spec.asynct.js
+328 silly gunzTarPerm modified mode [ 'test/spec.asynct.js', 420, 438 ]
+329 silly gunzTarPerm extractEntry lib/coffee-script/scope.js
+330 silly gunzTarPerm modified mode [ 'lib/coffee-script/scope.js', 420, 438 ]
+331 silly gunzTarPerm extractEntry lib/coffee-script/cake.js
+332 silly gunzTarPerm modified mode [ 'lib/coffee-script/cake.js', 420, 438 ]
+333 silly gunzTarPerm extractEntry test/split.asynct.js
+334 silly gunzTarPerm modified mode [ 'test/split.asynct.js', 420, 438 ]
+335 silly gunzTarPerm extractEntry test/writeArray.asynct.js
+336 silly gunzTarPerm modified mode [ 'test/writeArray.asynct.js', 420, 438 ]
+337 silly gunzTarPerm extractEntry test/readable.asynct.js
+338 silly gunzTarPerm modified mode [ 'test/readable.asynct.js', 420, 438 ]
+339 silly gunzTarPerm extractEntry test/helper/index.js
+340 silly gunzTarPerm modified mode [ 'test/helper/index.js', 420, 438 ]
+341 silly gunzTarPerm extractEntry data/haarcascade_frontalface_alt2.xml
+342 silly gunzTarPerm modified mode [ 'data/haarcascade_frontalface_alt2.xml', 493, 511 ]
+343 silly gunzTarPerm extractEntry lib/coffee-script/sourcemap.js
+344 silly gunzTarPerm modified mode [ 'lib/coffee-script/sourcemap.js', 420, 438 ]
+345 silly gunzTarPerm extractEntry lib/coffee-script/nodes.js
+346 silly gunzTarPerm modified mode [ 'lib/coffee-script/nodes.js', 420, 438 ]
+347 silly gunzTarPerm extractEntry data/haarcascade_frontalface_alt_tree.xml
+348 silly gunzTarPerm modified mode [ 'data/haarcascade_frontalface_alt_tree.xml', 493, 511 ]
+349 silly gunzTarPerm extractEntry data/haarcascade_frontalface_default.xml
+350 silly gunzTarPerm modified mode [ 'data/haarcascade_frontalface_default.xml', 493, 511 ]
+351 silly gunzTarPerm extractEntry data/haarcascade_fullbody.xml
+352 silly gunzTarPerm modified mode [ 'data/haarcascade_fullbody.xml', 493, 511 ]
+353 silly gunzTarPerm extractEntry data/haarcascade_lefteye_2splits.xml
+354 silly gunzTarPerm modified mode [ 'data/haarcascade_lefteye_2splits.xml', 493, 511 ]
+355 silly gunzTarPerm extractEntry data/haarcascade_lowerbody.xml
+356 silly gunzTarPerm modified mode [ 'data/haarcascade_lowerbody.xml', 493, 511 ]
+357 silly gunzTarPerm extractEntry data/haarcascade_eye_tree_eyeglasses.xml
+358 silly gunzTarPerm modified mode [ 'data/haarcascade_eye_tree_eyeglasses.xml', 493, 511 ]
+359 silly gunzTarPerm extractEntry data/haarcascade_mcs_eyepair_small.xml
+360 silly gunzTarPerm modified mode [ 'data/haarcascade_mcs_eyepair_small.xml', 493, 511 ]
+361 silly gunzTarPerm extractEntry data/haarcascade_mcs_lefteye.xml
+362 silly gunzTarPerm modified mode [ 'data/haarcascade_mcs_lefteye.xml', 493, 511 ]
+363 silly gunzTarPerm extractEntry data/haarcascade_mcs_mouth.xml
+364 silly gunzTarPerm modified mode [ 'data/haarcascade_mcs_mouth.xml', 493, 511 ]
+365 silly gunzTarPerm extractEntry data/haarcascade_mcs_nose.xml
+366 silly gunzTarPerm modified mode [ 'data/haarcascade_mcs_nose.xml', 493, 511 ]
+367 silly gunzTarPerm extractEntry data/haarcascade_mcs_righteye.xml
+368 silly gunzTarPerm modified mode [ 'data/haarcascade_mcs_righteye.xml', 493, 511 ]
+369 silly gunzTarPerm extractEntry data/haarcascade_mcs_upperbody.xml
+370 silly gunzTarPerm modified mode [ 'data/haarcascade_mcs_upperbody.xml', 493, 511 ]
+371 info preinstall event-stream@3.1.7
+372 silly prepareForInstallMany adding through@~2.3.1 from event-stream dependencies
+373 silly prepareForInstallMany adding duplexer@~0.1.1 from event-stream dependencies
+374 silly prepareForInstallMany adding from@~0 from event-stream dependencies
+375 silly prepareForInstallMany adding map-stream@~0.1.0 from event-stream dependencies
+376 silly prepareForInstallMany adding pause-stream@0.0.11 from event-stream dependencies
+377 silly prepareForInstallMany adding split@0.2 from event-stream dependencies
+378 silly prepareForInstallMany adding stream-combiner@~0.0.4 from event-stream dependencies
+379 silly cache add args [ 'through@~2.3.1', null ]
+380 verbose cache add spec through@~2.3.1
+381 silly cache add args [ 'duplexer@~0.1.1', null ]
+382 verbose cache add spec duplexer@~0.1.1
+383 silly cache add parsed spec { raw: 'through@~2.3.1',
+383 silly cache add   scope: null,
+383 silly cache add   name: 'through',
+383 silly cache add   rawSpec: '~2.3.1',
+383 silly cache add   spec: '>=2.3.1 <2.4.0',
+383 silly cache add   type: 'range' }
+384 verbose addNamed through@>=2.3.1 <2.4.0
+385 silly addNamed semver.valid null
+386 silly addNamed semver.validRange >=2.3.1 <2.4.0
+387 silly addNameRange { name: 'through', range: '>=2.3.1 <2.4.0', hasData: false }
+388 silly mapToRegistry name through
+389 silly mapToRegistry using default registry
+390 silly mapToRegistry registry https://registry.npmjs.org/
+391 silly mapToRegistry uri https://registry.npmjs.org/through
+392 verbose addNameRange registry:https://registry.npmjs.org/through not in flight; fetching
+393 silly cache add parsed spec { raw: 'duplexer@~0.1.1',
+393 silly cache add   scope: null,
+393 silly cache add   name: 'duplexer',
+393 silly cache add   rawSpec: '~0.1.1',
+393 silly cache add   spec: '>=0.1.1 <0.2.0',
+393 silly cache add   type: 'range' }
+394 verbose addNamed duplexer@>=0.1.1 <0.2.0
+395 silly addNamed semver.valid null
+396 silly addNamed semver.validRange >=0.1.1 <0.2.0
+397 silly addNameRange { name: 'duplexer', range: '>=0.1.1 <0.2.0', hasData: false }
+398 silly mapToRegistry name duplexer
+399 silly mapToRegistry using default registry
+400 silly mapToRegistry registry https://registry.npmjs.org/
+401 silly mapToRegistry uri https://registry.npmjs.org/duplexer
+402 verbose addNameRange registry:https://registry.npmjs.org/duplexer not in flight; fetching
+403 silly cache add args [ 'from@~0', null ]
+404 verbose cache add spec from@~0
+405 silly cache add parsed spec { raw: 'from@~0',
+405 silly cache add   scope: null,
+405 silly cache add   name: 'from',
+405 silly cache add   rawSpec: '~0',
+405 silly cache add   spec: '>=0.0.0 <1.0.0',
+405 silly cache add   type: 'range' }
+406 verbose addNamed from@>=0.0.0 <1.0.0
+407 silly addNamed semver.valid null
+408 silly addNamed semver.validRange >=0.0.0 <1.0.0
+409 silly addNameRange { name: 'from', range: '>=0.0.0 <1.0.0', hasData: false }
+410 silly mapToRegistry name from
+411 silly mapToRegistry using default registry
+412 silly mapToRegistry registry https://registry.npmjs.org/
+413 silly mapToRegistry uri https://registry.npmjs.org/from
+414 verbose addNameRange registry:https://registry.npmjs.org/from not in flight; fetching
+415 silly cache add args [ 'map-stream@~0.1.0', null ]
+416 verbose cache add spec map-stream@~0.1.0
+417 silly cache add parsed spec { raw: 'map-stream@~0.1.0',
+417 silly cache add   scope: null,
+417 silly cache add   name: 'map-stream',
+417 silly cache add   rawSpec: '~0.1.0',
+417 silly cache add   spec: '>=0.1.0 <0.2.0',
+417 silly cache add   type: 'range' }
+418 verbose addNamed map-stream@>=0.1.0 <0.2.0
+419 silly addNamed semver.valid null
+420 silly addNamed semver.validRange >=0.1.0 <0.2.0
+421 silly addNameRange { name: 'map-stream', range: '>=0.1.0 <0.2.0', hasData: false }
+422 silly mapToRegistry name map-stream
+423 silly mapToRegistry using default registry
+424 silly mapToRegistry registry https://registry.npmjs.org/
+425 silly mapToRegistry uri https://registry.npmjs.org/map-stream
+426 verbose addNameRange registry:https://registry.npmjs.org/map-stream not in flight; fetching
+427 silly cache add args [ 'pause-stream@0.0.11', null ]
+428 verbose cache add spec pause-stream@0.0.11
+429 silly cache add parsed spec { raw: 'pause-stream@0.0.11',
+429 silly cache add   scope: null,
+429 silly cache add   name: 'pause-stream',
+429 silly cache add   rawSpec: '0.0.11',
+429 silly cache add   spec: '0.0.11',
+429 silly cache add   type: 'version' }
+430 verbose addNamed pause-stream@0.0.11
+431 silly addNamed semver.valid 0.0.11
+432 silly addNamed semver.validRange 0.0.11
+433 silly mapToRegistry name pause-stream
+434 silly mapToRegistry using default registry
+435 silly mapToRegistry registry https://registry.npmjs.org/
+436 silly mapToRegistry uri https://registry.npmjs.org/pause-stream
+437 verbose addNameVersion registry:https://registry.npmjs.org/pause-stream not in flight; fetching
+438 silly cache add args [ 'split@0.2', null ]
+439 verbose cache add spec split@0.2
+440 silly cache add parsed spec { raw: 'split@0.2',
+440 silly cache add   scope: null,
+440 silly cache add   name: 'split',
+440 silly cache add   rawSpec: '0.2',
+440 silly cache add   spec: '>=0.2.0 <0.3.0',
+440 silly cache add   type: 'range' }
+441 verbose addNamed split@>=0.2.0 <0.3.0
+442 silly addNamed semver.valid null
+443 silly addNamed semver.validRange >=0.2.0 <0.3.0
+444 silly addNameRange { name: 'split', range: '>=0.2.0 <0.3.0', hasData: false }
+445 silly mapToRegistry name split
+446 silly mapToRegistry using default registry
+447 silly mapToRegistry registry https://registry.npmjs.org/
+448 silly mapToRegistry uri https://registry.npmjs.org/split
+449 verbose addNameRange registry:https://registry.npmjs.org/split not in flight; fetching
+450 silly cache add args [ 'stream-combiner@~0.0.4', null ]
+451 verbose cache add spec stream-combiner@~0.0.4
+452 silly cache add parsed spec { raw: 'stream-combiner@~0.0.4',
+452 silly cache add   scope: null,
+452 silly cache add   name: 'stream-combiner',
+452 silly cache add   rawSpec: '~0.0.4',
+452 silly cache add   spec: '>=0.0.4 <0.1.0',
+452 silly cache add   type: 'range' }
+453 verbose addNamed stream-combiner@>=0.0.4 <0.1.0
+454 silly addNamed semver.valid null
+455 silly addNamed semver.validRange >=0.0.4 <0.1.0
+456 silly addNameRange { name: 'stream-combiner',
+456 silly addNameRange   range: '>=0.0.4 <0.1.0',
+456 silly addNameRange   hasData: false }
+457 silly mapToRegistry name stream-combiner
+458 silly mapToRegistry using default registry
+459 silly mapToRegistry registry https://registry.npmjs.org/
+460 silly mapToRegistry uri https://registry.npmjs.org/stream-combiner
+461 verbose addNameRange registry:https://registry.npmjs.org/stream-combiner not in flight; fetching
+462 verbose request uri https://registry.npmjs.org/from
+463 verbose request no auth needed
+464 info attempt registry request try #1 at 3:34:12 PM
+465 http request GET https://registry.npmjs.org/from
+466 verbose request uri https://registry.npmjs.org/map-stream
+467 verbose request no auth needed
+468 info attempt registry request try #1 at 3:34:12 PM
+469 http request GET https://registry.npmjs.org/map-stream
+470 verbose request uri https://registry.npmjs.org/pause-stream
+471 verbose request no auth needed
+472 info attempt registry request try #1 at 3:34:12 PM
+473 http request GET https://registry.npmjs.org/pause-stream
+474 verbose request uri https://registry.npmjs.org/split
+475 verbose request no auth needed
+476 info attempt registry request try #1 at 3:34:12 PM
+477 http request GET https://registry.npmjs.org/split
+478 verbose request uri https://registry.npmjs.org/through
+479 verbose request no auth needed
+480 info attempt registry request try #1 at 3:34:12 PM
+481 verbose etag "CE6VRILW8NZQ8N35ZLTHDXJ61"
+482 http request GET https://registry.npmjs.org/through
+483 verbose request uri https://registry.npmjs.org/duplexer
+484 verbose request no auth needed
+485 info attempt registry request try #1 at 3:34:12 PM
+486 verbose etag "BWRDW4PQS6185CGKSBEHUT6ZK"
+487 http request GET https://registry.npmjs.org/duplexer
+488 verbose request uri https://registry.npmjs.org/stream-combiner
+489 verbose request no auth needed
+490 info attempt registry request try #1 at 3:34:12 PM
+491 verbose etag "9JFSU463QOUXE8PS7NIKW88DT"
+492 http request GET https://registry.npmjs.org/stream-combiner
+493 silly gunzTarPerm extractEntry data/haarcascade_profileface.xml
+494 silly gunzTarPerm modified mode [ 'data/haarcascade_profileface.xml', 493, 511 ]
+495 silly gunzTarPerm extractEntry data/haarcascade_righteye_2splits.xml
+496 silly gunzTarPerm modified mode [ 'data/haarcascade_righteye_2splits.xml', 493, 511 ]
+497 silly gunzTarPerm extractEntry data/haarcascade_upperbody.xml
+498 silly gunzTarPerm modified mode [ 'data/haarcascade_upperbody.xml', 493, 511 ]
+499 silly gunzTarPerm extractEntry examples/Face.js
+500 silly gunzTarPerm modified mode [ 'examples/Face.js', 493, 511 ]
+501 silly gunzTarPerm extractEntry examples/salt.js
+502 silly gunzTarPerm modified mode [ 'examples/salt.js', 493, 511 ]
+503 silly gunzTarPerm extractEntry examples/quad-crosses.js
+504 silly gunzTarPerm modified mode [ 'examples/quad-crosses.js', 493, 511 ]
+505 silly gunzTarPerm extractEntry examples/motion-track.js
+506 silly gunzTarPerm modified mode [ 'examples/motion-track.js', 420, 438 ]
+507 silly gunzTarPerm extractEntry examples/camera.js
+508 silly gunzTarPerm modified mode [ 'examples/camera.js', 493, 511 ]
+509 silly gunzTarPerm extractEntry examples/contours.js
+510 silly gunzTarPerm modified mode [ 'examples/contours.js', 493, 511 ]
+511 silly gunzTarPerm extractEntry examples/convert_image.js
+512 silly gunzTarPerm modified mode [ 'examples/convert_image.js', 493, 511 ]
+513 silly gunzTarPerm extractEntry examples/detect-shapes.js
+514 silly gunzTarPerm modified mode [ 'examples/detect-shapes.js', 493, 511 ]
+515 silly gunzTarPerm extractEntry examples/face-proxy.js
+516 silly gunzTarPerm modified mode [ 'examples/face-proxy.js', 493, 511 ]
+517 silly gunzTarPerm extractEntry examples/addweighted.js
+518 silly gunzTarPerm modified mode [ 'examples/addweighted.js', 493, 511 ]
+519 silly gunzTarPerm extractEntry examples/color_filter.js
+520 silly gunzTarPerm modified mode [ 'examples/color_filter.js', 420, 438 ]
+521 silly gunzTarPerm extractEntry examples/take-face-pics.js
+522 silly gunzTarPerm modified mode [ 'examples/take-face-pics.js', 420, 438 ]
+523 silly gunzTarPerm extractEntry examples/face_detection.js
+524 silly gunzTarPerm modified mode [ 'examples/face_detection.js', 493, 511 ]
+525 silly gunzTarPerm extractEntry examples/make-example-files.sh
+526 silly gunzTarPerm modified mode [ 'examples/make-example-files.sh', 493, 511 ]
+527 silly gunzTarPerm extractEntry examples/coin2.jpg
+528 silly gunzTarPerm modified mode [ 'examples/coin2.jpg', 420, 438 ]
+529 silly gunzTarPerm extractEntry examples/motion.mov
+530 silly gunzTarPerm modified mode [ 'examples/motion.mov', 420, 438 ]
+531 silly gunzTarPerm extractEntry examples/over_text.png
+532 silly gunzTarPerm modified mode [ 'examples/over_text.png', 493, 511 ]
+533 info preinstall coffee-script@1.7.1
+534 silly gunzTarPerm extractEntry examples/mona.png
+535 silly gunzTarPerm modified mode [ 'examples/mona.png', 493, 511 ]
+536 silly prepareForInstallMany adding mkdirp@~0.3.5 from coffee-script dependencies
+537 silly cache add args [ 'mkdirp@~0.3.5', null ]
+538 verbose cache add spec mkdirp@~0.3.5
+539 silly cache add parsed spec { raw: 'mkdirp@~0.3.5',
+539 silly cache add   scope: null,
+539 silly cache add   name: 'mkdirp',
+539 silly cache add   rawSpec: '~0.3.5',
+539 silly cache add   spec: '>=0.3.5 <0.4.0',
+539 silly cache add   type: 'range' }
+540 verbose addNamed mkdirp@>=0.3.5 <0.4.0
+541 silly addNamed semver.valid null
+542 silly addNamed semver.validRange >=0.3.5 <0.4.0
+543 silly addNameRange { name: 'mkdirp', range: '>=0.3.5 <0.4.0', hasData: false }
+544 silly mapToRegistry name mkdirp
+545 silly mapToRegistry using default registry
+546 silly mapToRegistry registry https://registry.npmjs.org/
+547 silly mapToRegistry uri https://registry.npmjs.org/mkdirp
+548 verbose addNameRange registry:https://registry.npmjs.org/mkdirp not in flight; fetching
+549 silly gunzTarPerm extractEntry examples/quads.jpg
+550 silly gunzTarPerm modified mode [ 'examples/quads.jpg', 420, 438 ]
+551 silly gunzTarPerm extractEntry examples/coffeescript/camera.coffee
+552 silly gunzTarPerm modified mode [ 'examples/coffeescript/camera.coffee', 420, 438 ]
+553 silly gunzTarPerm extractEntry examples/coffeescript/blend-images.coffee
+554 silly gunzTarPerm modified mode [ 'examples/coffeescript/blend-images.coffee', 420, 438 ]
+555 http 200 https://registry.npmjs.org/from
+556 silly get cb [ 200,
+556 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+556 silly get     etag: '"6FYHOX2YHP8RZNWTM6HPTAWN4"',
+556 silly get     'content-type': 'application/json',
+556 silly get     'content-encoding': 'gzip',
+556 silly get     'cache-control': 'max-age=300',
+556 silly get     'content-length': '1504',
+556 silly get     'accept-ranges': 'bytes',
+556 silly get     date: 'Fri, 13 May 2016 10:04:16 GMT',
+556 silly get     via: '1.1 varnish',
+556 silly get     age: '213',
+556 silly get     connection: 'keep-alive',
+556 silly get     'x-served-by': 'cache-sin6927-SIN',
+556 silly get     'x-cache': 'HIT',
+556 silly get     'x-cache-hits': '3',
+556 silly get     'x-timer': 'S1463133856.515033,VS0,VE0',
+556 silly get     vary: 'Accept-Encoding' } ]
+557 verbose get saving from to C:\Users\workstation1\AppData\Roaming\npm-cache\registry.npmjs.org\from\.cache.json
+558 silly gunzTarPerm extractEntry examples/coffeescript/camera-face-detection.coffee
+559 silly gunzTarPerm modified mode [ 'examples/coffeescript/camera-face-detection.coffee',
+559 silly gunzTarPerm   420,
+559 silly gunzTarPerm   438 ]
+560 silly gunzTarPerm extractEntry examples/coffeescript/camera-gausian-effect.coffee
+561 silly gunzTarPerm modified mode [ 'examples/coffeescript/camera-gausian-effect.coffee',
+561 silly gunzTarPerm   420,
+561 silly gunzTarPerm   438 ]
+562 silly gunzTarPerm extractEntry examples/coffeescript/camera-gaussian-effect.coffee
+563 silly gunzTarPerm modified mode [ 'examples/coffeescript/camera-gaussian-effect.coffee',
+563 silly gunzTarPerm   420,
+563 silly gunzTarPerm   438 ]
+564 http 304 https://registry.npmjs.org/through
+565 silly get cb [ 304,
+565 silly get   { date: 'Fri, 13 May 2016 10:04:16 GMT',
+565 silly get     via: '1.1 varnish',
+565 silly get     'cache-control': 'max-age=300',
+565 silly get     etag: '"CE6VRILW8NZQ8N35ZLTHDXJ61"',
+565 silly get     age: '61',
+565 silly get     connection: 'keep-alive',
+565 silly get     'x-served-by': 'cache-sin6925-SIN',
+565 silly get     'x-cache': 'HIT',
+565 silly get     'x-cache-hits': '3',
+565 silly get     'x-timer': 'S1463133856.549145,VS0,VE0',
+565 silly get     vary: 'Accept-Encoding' } ]
+566 verbose etag https://registry.npmjs.org/through from cache
+567 verbose get saving through to C:\Users\workstation1\AppData\Roaming\npm-cache\registry.npmjs.org\through\.cache.json
+568 silly addNameRange number 2 { name: 'from', range: '>=0.0.0 <1.0.0', hasData: true }
+569 silly addNameRange versions [ 'from',
+569 silly addNameRange   [ '0.0.0', '0.0.1', '0.0.2', '0.1.1', '0.1.2', '0.1.3' ] ]
+570 verbose addNamed from@0.1.3
+571 silly addNamed semver.valid 0.1.3
+572 silly addNamed semver.validRange 0.1.3
+573 silly addNameRange number 2 { name: 'through', range: '>=2.3.1 <2.4.0', hasData: true }
+574 silly addNameRange versions [ 'through',
+574 silly addNameRange   [ '0.0.1',
+574 silly addNameRange     '0.0.2',
+574 silly addNameRange     '0.0.3',
+574 silly addNameRange     '0.0.4',
+574 silly addNameRange     '0.1.0',
+574 silly addNameRange     '0.1.1',
+574 silly addNameRange     '0.1.2',
+574 silly addNameRange     '0.1.3',
+574 silly addNameRange     '0.1.4',
+574 silly addNameRange     '1.0.0',
+574 silly addNameRange     '1.1.0',
+574 silly addNameRange     '1.1.1',
+574 silly addNameRange     '1.1.2',
+574 silly addNameRange     '2.0.0',
+574 silly addNameRange     '2.1.0',
+574 silly addNameRange     '2.2.0',
+574 silly addNameRange     '2.2.1',
+574 silly addNameRange     '2.2.2',
+574 silly addNameRange     '2.2.4',
+574 silly addNameRange     '2.2.5',
+574 silly addNameRange     '2.2.6',
+574 silly addNameRange     '2.2.7',
+574 silly addNameRange     '2.3.1',
+574 silly addNameRange     '2.3.2',
+574 silly addNameRange     '2.3.3',
+574 silly addNameRange     '2.3.4',
+574 silly addNameRange     '2.3.6',
+574 silly addNameRange     '2.3.7',
+574 silly addNameRange     '2.3.8' ] ]
+575 verbose addNamed through@2.3.8
+576 silly addNamed semver.valid 2.3.8
+577 silly addNamed semver.validRange 2.3.8
+578 silly gunzTarPerm extractEntry examples/coffeescript/camera-face-detect-max-frames.coffee
+579 silly gunzTarPerm modified mode [ 'examples/coffeescript/camera-face-detect-max-frames.coffee',
+579 silly gunzTarPerm   420,
+579 silly gunzTarPerm   438 ]
+580 silly gunzTarPerm extractEntry examples/coffeescript/haarcascades/haarcascade_frontalface_alt.xml
+581 silly gunzTarPerm modified mode [ 'examples/coffeescript/haarcascades/haarcascade_frontalface_alt.xml',
+581 silly gunzTarPerm   420,
+581 silly gunzTarPerm   438 ]
+582 verbose request uri https://registry.npmjs.org/mkdirp
+583 verbose request no auth needed
+584 info attempt registry request try #1 at 3:34:13 PM
+585 verbose etag "46JL0I4UXSLNH4QQY945E8M6O"
+586 http request GET https://registry.npmjs.org/mkdirp
+587 http 200 https://registry.npmjs.org/split
+588 silly get cb [ 200,
+588 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+588 silly get     etag: '"AG1NP1OCVVQNG2LVZIKV8CIS0"',
+588 silly get     'content-type': 'application/json',
+588 silly get     'cache-control': 'max-age=300',
+588 silly get     'content-length': '21802',
+588 silly get     'accept-ranges': 'bytes',
+588 silly get     date: 'Fri, 13 May 2016 10:04:16 GMT',
+588 silly get     via: '1.1 varnish',
+588 silly get     age: '214',
+588 silly get     connection: 'keep-alive',
+588 silly get     'x-served-by': 'cache-sin6925-SIN',
+588 silly get     'x-cache': 'HIT',
+588 silly get     'x-cache-hits': '208',
+588 silly get     'x-timer': 'S1463133856.489292,VS0,VE0',
+588 silly get     vary: 'Accept-Encoding' } ]
+589 verbose get saving split to C:\Users\workstation1\AppData\Roaming\npm-cache\registry.npmjs.org\split\.cache.json
+590 http 304 https://registry.npmjs.org/stream-combiner
+591 silly get cb [ 304,
+591 silly get   { date: 'Fri, 13 May 2016 10:04:16 GMT',
+591 silly get     via: '1.1 varnish',
+591 silly get     'cache-control': 'max-age=300',
+591 silly get     etag: '"9JFSU463QOUXE8PS7NIKW88DT"',
+591 silly get     age: '12',
+591 silly get     connection: 'keep-alive',
+591 silly get     'x-served-by': 'cache-sin6923-SIN',
+591 silly get     'x-cache': 'HIT',
+591 silly get     'x-cache-hits': '1',
+591 silly get     'x-timer': 'S1463133856.665506,VS0,VE0',
+591 silly get     vary: 'Accept-Encoding' } ]
+592 verbose etag https://registry.npmjs.org/stream-combiner from cache
+593 verbose get saving stream-combiner to C:\Users\workstation1\AppData\Roaming\npm-cache\registry.npmjs.org\stream-combiner\.cache.json
+594 http 200 https://registry.npmjs.org/pause-stream
+595 silly get cb [ 200,
+595 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+595 silly get     etag: '"WP54EXTV6ETD8AN5ZGGNBVQL"',
+595 silly get     'content-type': 'application/json',
+595 silly get     'cache-control': 'max-age=300',
+595 silly get     'content-length': '17310',
+595 silly get     'accept-ranges': 'bytes',
+595 silly get     date: 'Fri, 13 May 2016 10:04:16 GMT',
+595 silly get     via: '1.1 varnish',
+595 silly get     age: '266',
+595 silly get     connection: 'keep-alive',
+595 silly get     'x-served-by': 'cache-sin6923-SIN',
+595 silly get     'x-cache': 'HIT',
+595 silly get     'x-cache-hits': '6',
+595 silly get     'x-timer': 'S1463133856.542198,VS0,VE0',
+595 silly get     vary: 'Accept-Encoding' } ]
+596 verbose get saving pause-stream to C:\Users\workstation1\AppData\Roaming\npm-cache\registry.npmjs.org\pause-stream\.cache.json
+597 http 304 https://registry.npmjs.org/duplexer
+598 silly get cb [ 304,
+598 silly get   { date: 'Fri, 13 May 2016 10:04:16 GMT',
+598 silly get     via: '1.1 varnish',
+598 silly get     'cache-control': 'max-age=300',
+598 silly get     etag: '"BWRDW4PQS6185CGKSBEHUT6ZK"',
+598 silly get     age: '12',
+598 silly get     connection: 'keep-alive',
+598 silly get     'x-served-by': 'cache-sin6922-SIN',
+598 silly get     'x-cache': 'HIT',
+598 silly get     'x-cache-hits': '1',
+598 silly get     'x-timer': 'S1463133856.706942,VS0,VE0',
+598 silly get     vary: 'Accept-Encoding' } ]
+599 verbose etag https://registry.npmjs.org/duplexer from cache
+600 verbose get saving duplexer to C:\Users\workstation1\AppData\Roaming\npm-cache\registry.npmjs.org\duplexer\.cache.json
+601 silly addNameRange number 2 { name: 'stream-combiner',
+601 silly addNameRange   range: '>=0.0.4 <0.1.0',
+601 silly addNameRange   hasData: true }
+602 silly addNameRange versions [ 'stream-combiner',
+602 silly addNameRange   [ '0.0.0',
+602 silly addNameRange     '0.0.1',
+602 silly addNameRange     '0.0.2',
+602 silly addNameRange     '0.0.4',
+602 silly addNameRange     '0.1.0',
+602 silly addNameRange     '0.2.0',
+602 silly addNameRange     '0.2.1',
+602 silly addNameRange     '0.2.2' ] ]
+603 verbose addNamed stream-combiner@0.0.4
+604 silly addNamed semver.valid 0.0.4
+605 silly addNamed semver.validRange 0.0.4
+606 silly addNameRange number 2 { name: 'split', range: '>=0.2.0 <0.3.0', hasData: true }
+607 silly addNameRange versions [ 'split',
+607 silly addNameRange   [ '0.0.0',
+607 silly addNameRange     '0.1.0',
+607 silly addNameRange     '0.1.1',
+607 silly addNameRange     '0.1.2',
+607 silly addNameRange     '0.2.0',
+607 silly addNameRange     '0.2.1',
+607 silly addNameRange     '0.2.3',
+607 silly addNameRange     '0.2.4',
+607 silly addNameRange     '0.2.5',
+607 silly addNameRange     '0.2.6',
+607 silly addNameRange     '0.2.7',
+607 silly addNameRange     '0.2.8',
+607 silly addNameRange     '0.2.9',
+607 silly addNameRange     '0.2.10',
+607 silly addNameRange     '0.3.0',
+607 silly addNameRange     '0.3.1',
+607 silly addNameRange     '0.3.2',
+607 silly addNameRange     '0.3.3',
+607 silly addNameRange     '1.0.0' ] ]
+608 verbose addNamed split@0.2.10
+609 silly addNamed semver.valid 0.2.10
+610 silly addNamed semver.validRange 0.2.10
+611 silly mapToRegistry name pause-stream
+612 silly mapToRegistry using default registry
+613 silly mapToRegistry registry https://registry.npmjs.org/
+614 silly mapToRegistry uri https://registry.npmjs.org/pause-stream
+615 verbose addRemoteTarball https://registry.npmjs.org/pause-stream/-/pause-stream-0.0.11.tgz not in flight; adding
+616 verbose addRemoteTarball [ 'https://registry.npmjs.org/pause-stream/-/pause-stream-0.0.11.tgz',
+616 verbose addRemoteTarball   'fe5a34b0cbce12b5aa6a2b403ee2e73b602f1445' ]
+617 silly addNameRange number 2 { name: 'duplexer', range: '>=0.1.1 <0.2.0', hasData: true }
+618 silly addNameRange versions [ 'duplexer',
+618 silly addNameRange   [ '0.0.1', '0.0.2', '0.0.3', '0.0.4', '0.1.0', '0.1.1' ] ]
+619 verbose addNamed duplexer@0.1.1
+620 silly addNamed semver.valid 0.1.1
+621 silly addNamed semver.validRange 0.1.1
+622 info retry fetch attempt 1 at 3:34:13 PM
+623 info attempt registry request try #1 at 3:34:13 PM
+624 http fetch GET https://registry.npmjs.org/pause-stream/-/pause-stream-0.0.11.tgz
+625 silly cache afterAdd through@2.3.8
+626 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\through\2.3.8\package\package.json not in flight; writing
+627 silly cache afterAdd from@0.1.3
+628 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\from\0.1.3\package\package.json not in flight; writing
+629 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\through\2.3.8\package\package.json written
+630 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\from\0.1.3\package\package.json written
+631 silly cache afterAdd duplexer@0.1.1
+632 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\duplexer\0.1.1\package\package.json not in flight; writing
+633 silly cache afterAdd split@0.2.10
+634 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\split\0.2.10\package\package.json not in flight; writing
+635 silly cache afterAdd stream-combiner@0.0.4
+636 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\stream-combiner\0.0.4\package\package.json not in flight; writing
+637 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\duplexer\0.1.1\package\package.json written
+638 silly gunzTarPerm extractEntry examples/coffeescript/image-basic-shapes.coffee
+639 silly gunzTarPerm modified mode [ 'examples/coffeescript/image-basic-shapes.coffee', 420, 438 ]
+640 silly gunzTarPerm extractEntry examples/coffeescript/image-load-display.coffee
+641 silly gunzTarPerm modified mode [ 'examples/coffeescript/image-load-display.coffee', 420, 438 ]
+642 silly gunzTarPerm extractEntry examples/coffeescript/image-load-modify-display.coffee
+643 silly gunzTarPerm modified mode [ 'examples/coffeescript/image-load-modify-display.coffee',
+643 silly gunzTarPerm   420,
+643 silly gunzTarPerm   438 ]
+644 silly gunzTarPerm extractEntry examples/coffeescript/images/linux-logo.png
+645 silly gunzTarPerm modified mode [ 'examples/coffeescript/images/linux-logo.png', 420, 438 ]
+646 silly gunzTarPerm extractEntry examples/coffeescript/images/mona.png
+647 silly gunzTarPerm modified mode [ 'examples/coffeescript/images/mona.png', 493, 511 ]
+648 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\stream-combiner\0.0.4\package\package.json written
+649 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\split\0.2.10\package\package.json written
+650 silly gunzTarPerm extractEntry examples/coffeescript/images/windows-logo.png
+651 silly gunzTarPerm modified mode [ 'examples/coffeescript/images/windows-logo.png', 420, 438 ]
+652 silly gunzTarPerm extractEntry examples/shapes.jpg
+653 silly gunzTarPerm modified mode [ 'examples/shapes.jpg', 420, 438 ]
+654 silly gunzTarPerm extractEntry examples/stuff.png
+655 silly gunzTarPerm modified mode [ 'examples/stuff.png', 493, 511 ]
+656 silly gunzTarPerm extractEntry examples/coin1.jpg
+657 silly gunzTarPerm modified mode [ 'examples/coin1.jpg', 420, 438 ]
+658 silly gunzTarPerm extractEntry index.html
+659 silly gunzTarPerm modified mode [ 'index.html', 493, 511 ]
+660 silly gunzTarPerm extractEntry lib/bindings.js
+661 silly gunzTarPerm modified mode [ 'lib/bindings.js', 493, 511 ]
+662 silly gunzTarPerm extractEntry lib/opencv.js
+663 silly gunzTarPerm modified mode [ 'lib/opencv.js', 493, 511 ]
+664 silly gunzTarPerm extractEntry .package.json.un~
+665 silly gunzTarPerm modified mode [ '.package.json.un~', 493, 511 ]
+666 silly gunzTarPerm extractEntry smoke/smoketest.js
+667 silly gunzTarPerm modified mode [ 'smoke/smoketest.js', 493, 511 ]
+668 silly gunzTarPerm extractEntry smoke/smoke.sh
+669 silly gunzTarPerm modified mode [ 'smoke/smoke.sh', 493, 511 ]
+670 silly gunzTarPerm extractEntry src/HighGUI.cc
+671 silly gunzTarPerm modified mode [ 'src/HighGUI.cc', 420, 438 ]
+672 silly gunzTarPerm extractEntry src/.Matrix.cc.un~
+673 silly gunzTarPerm modified mode [ 'src/.Matrix.cc.un~', 493, 511 ]
+674 silly gunzTarPerm extractEntry src/CamShift.cc
+675 silly gunzTarPerm modified mode [ 'src/CamShift.cc', 420, 438 ]
+676 silly gunzTarPerm extractEntry src/CamShift.h
+677 silly gunzTarPerm modified mode [ 'src/CamShift.h', 420, 438 ]
+678 silly gunzTarPerm extractEntry src/CascadeClassifierWrap.cc
+679 silly gunzTarPerm modified mode [ 'src/CascadeClassifierWrap.cc', 493, 511 ]
+680 silly gunzTarPerm extractEntry src/CascadeClassifierWrap.h
+681 silly gunzTarPerm modified mode [ 'src/CascadeClassifierWrap.h', 493, 511 ]
+682 silly gunzTarPerm extractEntry src/Contours.cc
+683 silly gunzTarPerm modified mode [ 'src/Contours.cc', 493, 511 ]
+684 silly gunzTarPerm extractEntry src/Contours.h
+685 silly gunzTarPerm modified mode [ 'src/Contours.h', 493, 511 ]
+686 silly gunzTarPerm extractEntry src/FaceRecognizer.cc
+687 silly gunzTarPerm modified mode [ 'src/FaceRecognizer.cc', 420, 438 ]
+688 silly gunzTarPerm extractEntry src/FaceRecognizer.h
+689 silly gunzTarPerm modified mode [ 'src/FaceRecognizer.h', 420, 438 ]
+690 silly gunzTarPerm extractEntry src/.Matrix.h.un~
+691 silly gunzTarPerm modified mode [ 'src/.Matrix.h.un~', 493, 511 ]
+692 silly gunzTarPerm extractEntry src/HighGUI.h
+693 silly gunzTarPerm modified mode [ 'src/HighGUI.h', 420, 438 ]
+694 silly gunzTarPerm extractEntry src/Matrix.cc
+695 silly gunzTarPerm modified mode [ 'src/Matrix.cc', 493, 511 ]
+696 silly gunzTarPerm extractEntry src/Matrix.h
+697 silly gunzTarPerm modified mode [ 'src/Matrix.h', 493, 511 ]
+698 silly gunzTarPerm extractEntry src/OpenCV.cc
+699 silly gunzTarPerm modified mode [ 'src/OpenCV.cc', 493, 511 ]
+700 silly gunzTarPerm extractEntry src/OpenCV.h
+701 silly gunzTarPerm modified mode [ 'src/OpenCV.h', 493, 511 ]
+702 silly gunzTarPerm extractEntry src/Point.cc
+703 silly gunzTarPerm modified mode [ 'src/Point.cc', 493, 511 ]
+704 silly gunzTarPerm extractEntry src/Point.h
+705 silly gunzTarPerm modified mode [ 'src/Point.h', 493, 511 ]
+706 silly gunzTarPerm extractEntry src/VideoCaptureWrap.cc
+707 silly gunzTarPerm modified mode [ 'src/VideoCaptureWrap.cc', 493, 511 ]
+708 silly gunzTarPerm extractEntry src/VideoCaptureWrap.h
+709 silly gunzTarPerm modified mode [ 'src/VideoCaptureWrap.h', 493, 511 ]
+710 silly gunzTarPerm extractEntry src/init.cc
+711 silly gunzTarPerm modified mode [ 'src/init.cc', 493, 511 ]
+712 http 304 https://registry.npmjs.org/mkdirp
+713 silly get cb [ 304,
+713 silly get   { date: 'Fri, 13 May 2016 10:04:17 GMT',
+713 silly get     via: '1.1 varnish',
+713 silly get     'cache-control': 'max-age=300',
+713 silly get     etag: '"46JL0I4UXSLNH4QQY945E8M6O"',
+713 silly get     age: '298',
+713 silly get     connection: 'keep-alive',
+713 silly get     'x-served-by': 'cache-sin6922-SIN',
+713 silly get     'x-cache': 'HIT',
+713 silly get     'x-cache-hits': '127',
+713 silly get     'x-timer': 'S1463133857.273045,VS0,VE0',
+713 silly get     vary: 'Accept-Encoding' } ]
+714 verbose etag https://registry.npmjs.org/mkdirp from cache
+715 verbose get saving mkdirp to C:\Users\workstation1\AppData\Roaming\npm-cache\registry.npmjs.org\mkdirp\.cache.json
+716 silly gunzTarPerm extractEntry test/unit.js
+717 silly gunzTarPerm modified mode [ 'test/unit.js', 493, 511 ]
+718 silly addNameRange number 2 { name: 'mkdirp', range: '>=0.3.5 <0.4.0', hasData: true }
+719 silly addNameRange versions [ 'mkdirp',
+719 silly addNameRange   [ '0.0.1',
+719 silly addNameRange     '0.0.2',
+719 silly addNameRange     '0.0.3',
+719 silly addNameRange     '0.0.4',
+719 silly addNameRange     '0.0.5',
+719 silly addNameRange     '0.0.6',
+719 silly addNameRange     '0.0.7',
+719 silly addNameRange     '0.1.0',
+719 silly addNameRange     '0.2.0',
+719 silly addNameRange     '0.2.1',
+719 silly addNameRange     '0.2.2',
+719 silly addNameRange     '0.3.0',
+719 silly addNameRange     '0.3.1',
+719 silly addNameRange     '0.3.2',
+719 silly addNameRange     '0.3.3',
+719 silly addNameRange     '0.3.4',
+719 silly addNameRange     '0.3.5',
+719 silly addNameRange     '0.4.0',
+719 silly addNameRange     '0.4.1',
+719 silly addNameRange     '0.4.2',
+719 silly addNameRange     '0.5.0',
+719 silly addNameRange     '0.5.1' ] ]
+720 verbose addNamed mkdirp@0.3.5
+721 silly addNamed semver.valid 0.3.5
+722 silly addNamed semver.validRange 0.3.5
+723 silly cache afterAdd mkdirp@0.3.5
+724 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\mkdirp\0.3.5\package\package.json not in flight; writing
+725 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\mkdirp\0.3.5\package\package.json written
+726 silly install resolved [ { name: 'mkdirp',
+726 silly install resolved     description: 'Recursively mkdir, like `mkdir -p`',
+726 silly install resolved     version: '0.3.5',
+726 silly install resolved     author:
+726 silly install resolved      { name: 'James Halliday',
+726 silly install resolved        email: 'mail@substack.net',
+726 silly install resolved        url: 'http://substack.net' },
+726 silly install resolved     main: './index',
+726 silly install resolved     keywords: [ 'mkdir', 'directory' ],
+726 silly install resolved     repository:
+726 silly install resolved      { type: 'git',
+726 silly install resolved        url: 'http://github.com/substack/node-mkdirp.git' },
+726 silly install resolved     scripts: { test: 'tap test/*.js' },
+726 silly install resolved     devDependencies: { tap: '~0.4.0' },
+726 silly install resolved     license: 'MIT',
+726 silly install resolved     _id: 'mkdirp@0.3.5',
+726 silly install resolved     dist:
+726 silly install resolved      { shasum: 'de3e5f8961c88c787ee1368df849ac4413eca8d7',
+726 silly install resolved        tarball: 'https://registry.npmjs.org/mkdirp/-/mkdirp-0.3.5.tgz' },
+726 silly install resolved     _from: 'mkdirp@>=0.3.5 <0.4.0',
+726 silly install resolved     _npmVersion: '1.2.2',
+726 silly install resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+726 silly install resolved     maintainers: [ [Object] ],
+726 silly install resolved     directories: {},
+726 silly install resolved     _shasum: 'de3e5f8961c88c787ee1368df849ac4413eca8d7',
+726 silly install resolved     _resolved: 'https://registry.npmjs.org/mkdirp/-/mkdirp-0.3.5.tgz',
+726 silly install resolved     readme: '# mkdirp\n\nLike `mkdir -p`, but in node.js!\n\n[![build status](https://secure.travis-ci.org/substack/node-mkdirp.png)](http://travis-ci.org/substack/node-mkdirp)\n\n# example\n\n## pow.js\n\n```js\nvar mkdirp = require(\'mkdirp\');\n    \nmkdirp(\'/tmp/foo/bar/baz\', function (err) {\n    if (err) console.error(err)\n    else console.log(\'pow!\')\n});\n```\n\nOutput\n\n```\npow!\n```\n\nAnd now /tmp/foo/bar/baz exists, huzzah!\n\n# methods\n\n```js\nvar mkdirp = require(\'mkdirp\');\n```\n\n## mkdirp(dir, mode, cb)\n\nCreate a new directory and any necessary subdirectories at `dir` with octal\npermission string `mode`.\n\nIf `mode` isn\'t specified, it defaults to `0777 & (~process.umask())`.\n\n`cb(err, made)` fires with the error or the first directory `made`\nthat had to be created, if any.\n\n## mkdirp.sync(dir, mode)\n\nSynchronously create a new directory and any necessary subdirectories at `dir`\nwith octal permission string `mode`.\n\nIf `mode` isn\'t specified, it defaults to `0777 & (~process.umask())`.\n\nReturns the first directory that had to be created, if any.\n\n# install\n\nWith [npm](http://npmjs.org) do:\n\n```\nnpm install mkdirp\n```\n\n# license\n\nMIT\n',
+726 silly install resolved     readmeFilename: 'readme.markdown',
+726 silly install resolved     bugs: { url: 'https://github.com/substack/node-mkdirp/issues' },
+726 silly install resolved     homepage: 'https://github.com/substack/node-mkdirp' } ]
+727 info install mkdirp@0.3.5 into C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\coffee-script
+728 info installOne mkdirp@0.3.5
+729 verbose installOne of mkdirp to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\coffee-script not in flight; installing
+730 http 200 https://registry.npmjs.org/map-stream
+731 silly get cb [ 200,
+731 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+731 silly get     etag: '"58XE5M7ZLVHYLX2TFWGPE85IS"',
+731 silly get     'content-type': 'application/json',
+731 silly get     'cache-control': 'max-age=300',
+731 silly get     'content-length': '8727',
+731 silly get     'accept-ranges': 'bytes',
+731 silly get     date: 'Fri, 13 May 2016 10:04:17 GMT',
+731 silly get     via: '1.1 varnish',
+731 silly get     age: '2',
+731 silly get     connection: 'keep-alive',
+731 silly get     'x-served-by': 'cache-sin6927-SIN',
+731 silly get     'x-cache': 'HIT',
+731 silly get     'x-cache-hits': '1',
+731 silly get     'x-timer': 'S1463133857.425114,VS0,VE0',
+731 silly get     vary: 'Accept-Encoding' } ]
+732 verbose get saving map-stream to C:\Users\workstation1\AppData\Roaming\npm-cache\registry.npmjs.org\map-stream\.cache.json
+733 verbose lock using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\mkdirp-69cd0ddd0a4e6ec8.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\coffee-script\node_modules\mkdirp
+734 silly install write writing mkdirp 0.3.5 to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\coffee-script\node_modules\mkdirp
+735 silly cache addNamed cb mkdirp@0.3.5
+736 verbose unbuild node_modules\camera\node_modules\coffee-script\node_modules\mkdirp
+737 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\coffee-script\node_modules\mkdirp is being purged from base C:\Users\workstation1\AppData\Roaming\npm
+738 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\coffee-script\node_modules\mkdirp
+739 verbose tar unpack C:\Users\workstation1\AppData\Roaming\npm-cache\mkdirp\0.3.5\package.tgz
+740 verbose tar unpacking to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\coffee-script\node_modules\mkdirp
+741 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\coffee-script\node_modules\mkdirp is being purged
+742 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\coffee-script\node_modules\mkdirp
+743 silly gunzTarPerm modes [ '777', '666' ]
+744 silly addNameRange number 2 { name: 'map-stream', range: '>=0.1.0 <0.2.0', hasData: true }
+745 silly addNameRange versions [ 'map-stream',
+745 silly addNameRange   [ '0.0.1', '0.0.2', '0.0.3', '0.0.4', '0.1.0', '0.0.5', '0.0.6' ] ]
+746 verbose addNamed map-stream@0.1.0
+747 silly addNamed semver.valid 0.1.0
+748 silly addNamed semver.validRange 0.1.0
+749 silly gunzTarPerm extractEntry package.json
+750 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+751 silly gunzTarPerm extractEntry .npmignore
+752 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+753 silly gunzTarPerm extractEntry LICENSE
+754 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+755 silly gunzTarPerm extractEntry index.js
+756 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+757 silly gunzTarPerm extractEntry examples/pow.js
+758 silly gunzTarPerm modified mode [ 'examples/pow.js', 420, 438 ]
+759 silly gunzTarPerm extractEntry readme.markdown
+760 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 438 ]
+761 silly gunzTarPerm extractEntry test/perm.js
+762 silly gunzTarPerm modified mode [ 'test/perm.js', 420, 438 ]
+763 silly gunzTarPerm extractEntry test/perm_sync.js
+764 silly gunzTarPerm modified mode [ 'test/perm_sync.js', 420, 438 ]
+765 silly gunzTarPerm extractEntry test/race.js
+766 silly gunzTarPerm modified mode [ 'test/race.js', 420, 438 ]
+767 silly cache afterAdd map-stream@0.1.0
+768 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\map-stream\0.1.0\package\package.json not in flight; writing
+769 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\map-stream\0.1.0\package\package.json written
+770 silly gunzTarPerm extractEntry test/rel.js
+771 silly gunzTarPerm modified mode [ 'test/rel.js', 420, 438 ]
+772 silly gunzTarPerm extractEntry test/return.js
+773 silly gunzTarPerm modified mode [ 'test/return.js', 420, 438 ]
+774 silly gunzTarPerm extractEntry test/clobber.js
+775 silly gunzTarPerm modified mode [ 'test/clobber.js', 420, 438 ]
+776 silly gunzTarPerm extractEntry test/root.js
+777 silly gunzTarPerm modified mode [ 'test/root.js', 420, 438 ]
+778 silly gunzTarPerm extractEntry test/umask.js
+779 silly gunzTarPerm modified mode [ 'test/umask.js', 420, 438 ]
+780 silly gunzTarPerm extractEntry test/sync.js
+781 silly gunzTarPerm modified mode [ 'test/sync.js', 420, 438 ]
+782 silly gunzTarPerm extractEntry test/chmod.js
+783 silly gunzTarPerm modified mode [ 'test/chmod.js', 420, 438 ]
+784 http fetch 200 https://registry.npmjs.org/pause-stream/-/pause-stream-0.0.11.tgz
+785 silly fetchAndShaCheck shasum fe5a34b0cbce12b5aa6a2b403ee2e73b602f1445
+786 verbose addTmpTarball C:\Users\WORKST~1\AppData\Local\Temp\npm-7064-de43d341\registry.npmjs.org\pause-stream\-\pause-stream-0.0.11.tgz not in flight; adding
+787 verbose addTmpTarball already have metadata; skipping unpack for pause-stream@0.0.11
+788 silly gunzTarPerm extractEntry test/umask_sync.js
+789 silly gunzTarPerm modified mode [ 'test/umask_sync.js', 420, 438 ]
+790 silly gunzTarPerm extractEntry test/return_sync.js
+791 silly gunzTarPerm modified mode [ 'test/return_sync.js', 420, 438 ]
+792 silly cache afterAdd pause-stream@0.0.11
+793 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\pause-stream\0.0.11\package\package.json not in flight; writing
+794 silly gunzTarPerm extractEntry test/mkdirp.js
+795 silly gunzTarPerm modified mode [ 'test/mkdirp.js', 420, 438 ]
+796 silly gunzTarPerm extractEntry .travis.yml
+797 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+798 verbose afterAdd C:\Users\workstation1\AppData\Roaming\npm-cache\pause-stream\0.0.11\package\package.json written
+799 silly install resolved [ { name: 'through',
+799 silly install resolved     version: '2.3.8',
+799 silly install resolved     description: 'simplified stream construction',
+799 silly install resolved     main: 'index.js',
+799 silly install resolved     scripts: { test: 'set -e; for t in test/*.js; do node $t; done' },
+799 silly install resolved     devDependencies: { 'stream-spec': '~0.3.5', tape: '~2.3.2', from: '~0.1.3' },
+799 silly install resolved     keywords: [ 'stream', 'streams', 'user-streams', 'pipe' ],
+799 silly install resolved     author:
+799 silly install resolved      { name: 'Dominic Tarr',
+799 silly install resolved        email: 'dominic.tarr@gmail.com',
+799 silly install resolved        url: 'dominictarr.com' },
+799 silly install resolved     license: 'MIT',
+799 silly install resolved     repository:
+799 silly install resolved      { type: 'git',
+799 silly install resolved        url: 'https://github.com/dominictarr/through.git' },
+799 silly install resolved     homepage: 'https://github.com/dominictarr/through',
+799 silly install resolved     testling: { browsers: [Object], files: 'test/*.js' },
+799 silly install resolved     readme: '#through\n\n[![build status](https://secure.travis-ci.org/dominictarr/through.png)](http://travis-ci.org/dominictarr/through)\n[![testling badge](https://ci.testling.com/dominictarr/through.png)](https://ci.testling.com/dominictarr/through)\n\nEasy way to create a `Stream` that is both `readable` and `writable`. \n\n* Pass in optional `write` and `end` methods.\n* `through` takes care of pause/resume logic if you use `this.queue(data)` instead of `this.emit(\'data\', data)`.\n* Use `this.pause()` and `this.resume()` to manage flow.\n* Check `this.paused` to see current flow state. (`write` always returns `!this.paused`).\n\nThis function is the basis for most of the synchronous streams in \n[event-stream](http://github.com/dominictarr/event-stream).\n\n``` js\nvar through = require(\'through\')\n\nthrough(function write(data) {\n    this.queue(data) //data *must* not be null\n  },\n  function end () { //optional\n    this.queue(null)\n  })\n```\n\nOr, can also be used _without_ buffering on pause, use `this.emit(\'data\', data)`,\nand this.emit(\'end\')\n\n``` js\nvar through = require(\'through\')\n\nthrough(function write(data) {\n    this.emit(\'data\', data)\n    //this.pause() \n  },\n  function end () { //optional\n    this.emit(\'end\')\n  })\n```\n\n## Extended Options\n\nYou will probably not need these 99% of the time.\n\n### autoDestroy=false\n\nBy default, `through` emits close when the writable\nand readable side of the stream has ended.\nIf that is not desired, set `autoDestroy=false`.\n\n``` js\nvar through = require(\'through\')\n\n//like this\nvar ts = through(write, end, {autoDestroy: false})\n//or like this\nvar ts = through(write, end)\nts.autoDestroy = false\n```\n\n## License\n\nMIT / Apache2\n',
+799 silly install resolved     readmeFilename: 'readme.markdown',
+799 silly install resolved     bugs: { url: 'https://github.com/dominictarr/through/issues' },
+799 silly install resolved     _id: 'through@2.3.8',
+799 silly install resolved     _shasum: '0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5',
+799 silly install resolved     _from: 'through@>=2.3.1 <2.4.0',
+799 silly install resolved     _resolved: 'https://registry.npmjs.org/through/-/through-2.3.8.tgz' },
+799 silly install resolved   { name: 'from',
+799 silly install resolved     version: '0.1.3',
+799 silly install resolved     description: 'Easy way to make a Readable Stream',
+799 silly install resolved     main: 'index.js',
+799 silly install resolved     scripts: { test: 'asynct test/*.js' },
+799 silly install resolved     repository: { type: 'git', url: 'git://github.com/dominictarr/from.git' },
+799 silly install resolved     keywords: [ 'stream', 'streams', 'readable', 'easy' ],
+799 silly install resolved     devDependencies: { asynct: '1', 'stream-spec': '0', assertions: '~2.3.0' },
+799 silly install resolved     author:
+799 silly install resolved      { name: 'Dominic Tarr',
+799 silly install resolved        email: 'dominic.tarr@gmail.com',
+799 silly install resolved        url: 'dominictarr.com' },
+799 silly install resolved     license: 'MIT',
+799 silly install resolved     readme: '# from\n\nAn easy way to create a `readable Stream`.\n\n## from(function getChunk(count, next))\n\nfrom takes a `getChunk` function and returns a stream.  \n\n`getChunk` is called again and again, after each time the user calls `next()`, \nuntil the user emits `\'end\'`\n\nif `pause()` is called, the `getChunk` won\'t be called again untill `resume()` is called.\n\n\n```js\nvar from = require(\'from\')\n\nvar stream = \n  from(function getChunk(count, next) {\n    //do some sort of data\n    this.emit(\'data\', whatever)\n    \n    if(itsOver)\n      this.emit(\'end\')\n\n    //ready to handle the next chunk\n    next()\n    //or, if it\'s sync:\n    return true \n  })\n```\n\n## from(array)\n\nfrom also takes an `Array` whose elements it emits one after another.\n\n## License\nMIT / Apache2\n',
+799 silly install resolved     readmeFilename: 'readme.markdown',
+799 silly install resolved     bugs: { url: 'https://github.com/dominictarr/from/issues' },
+799 silly install resolved     homepage: 'https://github.com/dominictarr/from',
+799 silly install resolved     _id: 'from@0.1.3',
+799 silly install resolved     _shasum: 'ef63ac2062ac32acf7862e0d40b44b896f22f3bc',
+799 silly install resolved     _from: 'from@>=0.0.0 <1.0.0',
+799 silly install resolved     _resolved: 'https://registry.npmjs.org/from/-/from-0.1.3.tgz' },
+799 silly install resolved   { name: 'duplexer',
+799 silly install resolved     version: '0.1.1',
+799 silly install resolved     description: 'Creates a duplex stream',
+799 silly install resolved     keywords: [],
+799 silly install resolved     author: { name: 'Raynos', email: 'raynos2@gmail.com' },
+799 silly install resolved     repository: { type: 'git', url: 'git://github.com/Raynos/duplexer.git' },
+799 silly install resolved     main: 'index',
+799 silly install resolved     homepage: 'https://github.com/Raynos/duplexer',
+799 silly install resolved     contributors: [ [Object] ],
+799 silly install resolved     bugs:
+799 silly install resolved      { url: 'https://github.com/Raynos/duplexer/issues',
+799 silly install resolved        email: 'raynos2@gmail.com' },
+799 silly install resolved     devDependencies: { tape: '0.3.3', through: '~0.1.4' },
+799 silly install resolved     licenses: [ [Object] ],
+799 silly install resolved     scripts: { test: 'node test' },
+799 silly install resolved     testling: { files: 'test/index.js', browsers: [Object] },
+799 silly install resolved     readme: '# duplexer\n\n[![build status][1]][2] [![dependency status][3]][4]\n\n[![browser support][5]][6]\n\nCreates a duplex stream\n\nTaken from [event-stream][7]\n\n## duplex (writeStream, readStream)\n\nTakes a writable stream and a readable stream and makes them appear as a readable writable stream.\n\nIt is assumed that the two streams are connected to each other in some way.\n\n## Example\n\n```js\nvar grep = cp.exec(\'grep Stream\')\n\nduplex(grep.stdin, grep.stdout)\n```\n\n## Installation\n\n`npm install duplexer`\n\n## Tests\n\n`npm test`\n\n## Contributors\n\n - Dominictarr\n - Raynos\n - samccone\n\n## MIT Licenced\n\n  [1]: https://secure.travis-ci.org/Raynos/duplexer.png\n  [2]: https://travis-ci.org/Raynos/duplexer\n  [3]: https://david-dm.org/Raynos/duplexer.png\n  [4]: https://david-dm.org/Raynos/duplexer\n  [5]: https://ci.testling.com/Raynos/duplexer.png\n  [6]: https://ci.testling.com/Raynos/duplexer\n  [7]: https://github.com/dominictarr/event-stream#duplex-writestream-readstream\n',
+799 silly install resolved     readmeFilename: 'README.md',
+799 silly install resolved     _id: 'duplexer@0.1.1',
+799 silly install resolved     dist:
+799 silly install resolved      { shasum: 'ace6ff808c1ce66b57d1ebf97977acb02334cfc1',
+799 silly install resolved        tarball: 'https://registry.npmjs.org/duplexer/-/duplexer-0.1.1.tgz' },
+799 silly install resolved     _from: 'duplexer@>=0.1.1 <0.2.0',
+799 silly install resolved     _npmVersion: '1.2.18',
+799 silly install resolved     _npmUser: { name: 'raynos', email: 'raynos2@gmail.com' },
+799 silly install resolved     maintainers: [ [Object], [Object] ],
+799 silly install resolved     directories: {},
+799 silly install resolved     _shasum: 'ace6ff808c1ce66b57d1ebf97977acb02334cfc1',
+799 silly install resolved     _resolved: 'https://registry.npmjs.org/duplexer/-/duplexer-0.1.1.tgz' },
+799 silly install resolved   { name: 'stream-combiner',
+799 silly install resolved     version: '0.0.4',
+799 silly install resolved     homepage: 'https://github.com/dominictarr/stream-combiner',
+799 silly install resolved     repository:
+799 silly install resolved      { type: 'git',
+799 silly install resolved        url: 'git://github.com/dominictarr/stream-combiner.git' },
+799 silly install resolved     dependencies: { duplexer: '~0.1.1' },
+799 silly install resolved     devDependencies: { tape: '~2.3.0', 'event-stream': '~3.0.7' },
+799 silly install resolved     scripts: { test: 'set -e; for t in test/*.js; do node $t; done' },
+799 silly install resolved     author:
+799 silly install resolved      { name: '\'Dominic Tarr\'',
+799 silly install resolved        email: 'dominic.tarr@gmail.com',
+799 silly install resolved        url: 'http://dominictarr.com' },
+799 silly install resolved     license: 'MIT',
+799 silly install resolved     description: '<img src=https://secure.travis-ci.org/dominictarr/stream-combiner.png?branch=master>',
+799 silly install resolved     bugs: { url: 'https://github.com/dominictarr/stream-combiner/issues' },
+799 silly install resolved     _id: 'stream-combiner@0.0.4',
+799 silly install resolved     dist:
+799 silly install resolved      { shasum: '4d5e433c185261dde623ca3f44c586bcf5c4ad14',
+799 silly install resolved        tarball: 'https://registry.npmjs.org/stream-combiner/-/stream-combiner-0.0.4.tgz' },
+799 silly install resolved     _from: 'stream-combiner@>=0.0.4 <0.1.0',
+799 silly install resolved     _npmVersion: '1.3.11',
+799 silly install resolved     _npmUser: { name: 'dominictarr', email: 'dominic.tarr@gmail.com' },
+799 silly install resolved     maintainers: [ [Object] ],
+799 silly install resolved     directories: {},
+799 silly install resolved     _shasum: '4d5e433c185261dde623ca3f44c586bcf5c4ad14',
+799 silly install resolved     _resolved: 'https://registry.npmjs.org/stream-combiner/-/stream-combiner-0.0.4.tgz',
+799 silly install resolved     readme: '# stream-combiner\n\n<img src=https://secure.travis-ci.org/dominictarr/stream-combiner.png?branch=master>\n\n## Combine (stream1,...,streamN)\n\nTurn a pipeline into a single stream. `pipeline` returns a stream that writes to the first stream\nand reads from the last stream. \n\nListening for \'error\' will recieve errors from all streams inside the pipe.\n\n``` js\n  var Combine = require(\'stream-combiner\')\n  var es      = require(\'event-stream\')\n\n  Combine(                         //connect streams together with `pipe`\n    process.openStdin(),              //open stdin\n    es.split(),                       //split stream to break on newlines\n    es.map(function (data, callback) {//turn this async function into a stream\n      callback(null\n        , inspect(JSON.parse(data)))  //render it nicely\n    }),\n    process.stdout                    // pipe it to stdout !\n    )\n```\n\n## License\n\nMIT\n',
+799 silly install resolved     readmeFilename: 'README.md' },
+799 silly install resolved   { name: 'split',
+799 silly install resolved     version: '0.2.10',
+799 silly install resolved     description: 'split a Text Stream into a Line Stream',
+799 silly install resolved     homepage: 'http://github.com/dominictarr/split',
+799 silly install resolved     repository: { type: 'git', url: 'git://github.com/dominictarr/split.git' },
+799 silly install resolved     dependencies: { through: '2' },
+799 silly install resolved     devDependencies:
+799 silly install resolved      { asynct: '*',
+799 silly install resolved        'it-is': '1',
+799 silly install resolved        ubelt: '~2.9',
+799 silly install resolved        'stream-spec': '~0.2',
+799 silly install resolved        'event-stream': '~3.0.2' },
+799 silly install resolved     scripts: { test: 'asynct test/' },
+799 silly install resolved     author:
+799 silly install resolved      { name: 'Dominic Tarr',
+799 silly install resolved        email: 'dominic.tarr@gmail.com',
+799 silly install resolved        url: 'http://bit.ly/dominictarr' },
+799 silly install resolved     optionalDependencies: {},
+799 silly install resolved     engines: { node: '*' },
+799 silly install resolved     readme: '# Split (matcher)\n\n[![build status](https://secure.travis-ci.org/dominictarr/split.png)](http://travis-ci.org/dominictarr/split)\n\nBreak up a stream and reassemble it so that each line is a chunk. matcher may be a `String`, or a `RegExp` \n\nExample, read every line in a file ...\n\n``` js\n  fs.createReadStream(file)\n    .pipe(split())\n    .on(\'data\', function (line) {\n      //each chunk now is a seperate line!\n    })\n\n```\n\n`split` takes the same arguments as `string.split` except it defaults to \'/\\r?\\n/\' instead of \',\', and the optional `limit` paremeter is ignored.\n[String#split](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/split)\n\n# NDJ - Newline Delimited Json\n\n`split` accepts a function which transforms each line.\n\n``` js\nfs.createReadStream(file)\n  .pipe(split(JSON.parse))\n  .on(\'data\', function (obj) {\n    //each chunk now is a a js object\n  })\n  .on(\'error\', function (err) {\n    //syntax errors will land here\n    //note, this ends the stream.\n  })\n```\n\n# License\n\nMIT\n',
+799 silly install resolved     readmeFilename: 'readme.markdown',
+799 silly install resolved     bugs: { url: 'https://github.com/dominictarr/split/issues' },
+799 silly install resolved     _id: 'split@0.2.10',
+799 silly install resolved     _shasum: '67097c601d697ce1368f418f06cd201cf0521a57',
+799 silly install resolved     _from: 'split@>=0.2.0 <0.3.0',
+799 silly install resolved     _resolved: 'https://registry.npmjs.org/split/-/split-0.2.10.tgz' },
+799 silly install resolved   { name: 'map-stream',
+799 silly install resolved     version: '0.1.0',
+799 silly install resolved     description: 'construct pipes of streams of events',
+799 silly install resolved     homepage: 'http://github.com/dominictarr/map-stream',
+799 silly install resolved     repository:
+799 silly install resolved      { type: 'git',
+799 silly install resolved        url: 'git://github.com/dominictarr/map-stream.git' },
+799 silly install resolved     dependencies: {},
+799 silly install resolved     devDependencies:
+799 silly install resolved      { asynct: '*',
+799 silly install resolved        'it-is': '1',
+799 silly install resolved        ubelt: '~2.9',
+799 silly install resolved        'stream-spec': '~0.2',
+799 silly install resolved        'event-stream': '~2.1',
+799 silly install resolved        from: '0.0.2' },
+799 silly install resolved     scripts: { test: 'asynct test/' },
+799 silly install resolved     author:
+799 silly install resolved      { name: 'Dominic Tarr',
+799 silly install resolved        email: 'dominic.tarr@gmail.com',
+799 silly install resolved        url: 'http://dominictarr.com' },
+799 silly install resolved     readme: '# MapStream\n\nRefactored out of [event-stream](https://github.com/dominictarr/event-stream)\n\n##map (asyncFunction[, options])\n\nCreate a through stream from an asyncronous function.  \n\n``` js\nvar map = require(\'map-stream\')\n\nmap(function (data, callback) {\n  //transform data\n  // ...\n  callback(null, data)\n})\n\n```\n\nEach map MUST call the callback. It may callback with data, with an error or with no arguments, \n\n  * `callback()` drop this data.  \n    this makes the map work like `filter`,  \n    note:`callback(null,null)` is not the same, and will emit `null`\n\n  * `callback(null, newData)` turn data into newData\n    \n  * `callback(error)` emit an error for this item.\n\n>Note: if a callback is not called, `map` will think that it is still being processed,   \n>every call must be answered or the stream will not know when to end.  \n>\n>Also, if the callback is called more than once, every call but the first will be ignored.\n\n##Options \n\n * `failures` - `boolean` continue mapping even if error occured. On error `map-stream` will emit `failure` event. (default: `false`)\n',
+799 silly install resolved     readmeFilename: 'readme.markdown',
+799 silly install resolved     bugs: { url: 'https://github.com/dominictarr/map-stream/issues' },
+799 silly install resolved     _id: 'map-stream@0.1.0',
+799 silly install resolved     _shasum: 'e56aa94c4c8055a16404a0674b78f215f7c8e194',
+799 silly install resolved     _from: 'map-stream@>=0.1.0 <0.2.0',
+799 silly install resolved     _resolved: 'https://registry.npmjs.org/map-stream/-/map-stream-0.1.0.tgz' },
+799 silly install resolved   { name: 'pause-stream',
+799 silly install resolved     version: '0.0.11',
+799 silly install resolved     description: 'a ThroughStream that strictly buffers all readable events when paused.',
+799 silly install resolved     main: 'index.js',
+799 silly install resolved     directories: { test: 'test' },
+799 silly install resolved     devDependencies: { 'stream-tester': '0.0.2', 'stream-spec': '~0.2.0' },
+799 silly install resolved     scripts: { test: 'node test/index.js && node test/pause-end.js' },
+799 silly install resolved     repository:
+799 silly install resolved      { type: 'git',
+799 silly install resolved        url: 'git://github.com/dominictarr/pause-stream.git' },
+799 silly install resolved     keywords: [ 'stream', 'pipe', 'pause', 'drain', 'buffer' ],
+799 silly install resolved     author:
+799 silly install resolved      { name: 'Dominic Tarr',
+799 silly install resolved        email: 'dominic.tarr@gmail.com',
+799 silly install resolved        url: 'dominictarr.com' },
+799 silly install resolved     license: [ 'MIT', 'Apache2' ],
+799 silly install resolved     dependencies: { through: '~2.3' },
+799 silly install resolved     readme: '# PauseStream\n\nThis is a `Stream` that will strictly buffer when paused.\nConnect it to anything you need buffered.\n\n``` js\n  var ps = require(\'pause-stream\')();\n\n  badlyBehavedStream.pipe(ps.pause())\n\n  aLittleLater(function (err, data) {\n    ps.pipe(createAnotherStream(data))\n    ps.resume()\n  })\n```\n\n`PauseStream` will buffer whenever paused.\nit will buffer when yau have called `pause` manually.\nbut also when it\'s downstream `dest.write()===false`.\nit will attempt to drain the buffer when you call resume\nor the downstream emits `\'drain\'`\n\n`PauseStream` is tested using [stream-spec](https://github.com/dominictarr/stream-spec)\nand [stream-tester](https://github.com/dominictarr/stream-tester)\n\nThis is now the default case of \n[through](https://github.com/dominictarr/through)\n\nhttps://github.com/dominictarr/pause-stream/commit/4a6fe3dc2c11091b1efbfde912e0473719ed9cc0\n',
+799 silly install resolved     readmeFilename: 'readme.markdown',
+799 silly install resolved     bugs: { url: 'https://github.com/dominictarr/pause-stream/issues' },
+799 silly install resolved     _id: 'pause-stream@0.0.11',
+799 silly install resolved     dist:
+799 silly install resolved      { shasum: 'fe5a34b0cbce12b5aa6a2b403ee2e73b602f1445',
+799 silly install resolved        tarball: 'https://registry.npmjs.org/pause-stream/-/pause-stream-0.0.11.tgz' },
+799 silly install resolved     _from: 'pause-stream@0.0.11',
+799 silly install resolved     _npmVersion: '1.3.6',
+799 silly install resolved     _npmUser: { name: 'dominictarr', email: 'dominic.tarr@gmail.com' },
+799 silly install resolved     maintainers: [ [Object] ],
+799 silly install resolved     _shasum: 'fe5a34b0cbce12b5aa6a2b403ee2e73b602f1445',
+799 silly install resolved     _resolved: 'https://registry.npmjs.org/pause-stream/-/pause-stream-0.0.11.tgz' } ]
+800 info install through@2.3.8 into C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream
+801 info install from@0.1.3 into C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream
+802 info install duplexer@0.1.1 into C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream
+803 info install stream-combiner@0.0.4 into C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream
+804 info install split@0.2.10 into C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream
+805 info install map-stream@0.1.0 into C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream
+806 info install pause-stream@0.0.11 into C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream
+807 info installOne through@2.3.8
+808 verbose installOne of through to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream not in flight; installing
+809 info installOne from@0.1.3
+810 verbose installOne of from to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream not in flight; installing
+811 info installOne duplexer@0.1.1
+812 verbose installOne of duplexer to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream not in flight; installing
+813 info installOne stream-combiner@0.0.4
+814 verbose installOne of stream-combiner to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream not in flight; installing
+815 info installOne split@0.2.10
+816 verbose installOne of split to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream not in flight; installing
+817 info installOne map-stream@0.1.0
+818 verbose installOne of map-stream to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream not in flight; installing
+819 info installOne pause-stream@0.0.11
+820 verbose installOne of pause-stream to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream not in flight; installing
+821 verbose lock using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\through-d7d1a3da89629144.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\through
+822 verbose lock using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\from-7c28b663828f994e.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\from
+823 verbose lock using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\duplexer-76f0d40b1011016f.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\duplexer
+824 silly install write writing through 2.3.8 to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\through
+825 silly cache addNamed cb through@2.3.8
+826 verbose unbuild node_modules\camera\node_modules\event-stream\node_modules\through
+827 silly install write writing from 0.1.3 to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\from
+828 silly cache addNamed cb from@0.1.3
+829 verbose unbuild node_modules\camera\node_modules\event-stream\node_modules\from
+830 verbose lock using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\stream-combiner-30f9cf21fa45b1ec.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\stream-combiner
+831 silly install write writing duplexer 0.1.1 to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\duplexer
+832 silly cache addNamed cb duplexer@0.1.1
+833 verbose unbuild node_modules\camera\node_modules\event-stream\node_modules\duplexer
+834 verbose lock using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\pause-stream-b1fad77b580eaee6.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\pause-stream
+835 verbose lock using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\map-stream-39f83f11179fcf87.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\map-stream
+836 silly install write writing stream-combiner 0.0.4 to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\stream-combiner
+837 silly cache addNamed cb stream-combiner@0.0.4
+838 verbose unbuild node_modules\camera\node_modules\event-stream\node_modules\stream-combiner
+839 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\through is being purged from base C:\Users\workstation1\AppData\Roaming\npm
+840 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\through
+841 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\from is being purged from base C:\Users\workstation1\AppData\Roaming\npm
+842 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\from
+843 silly install write writing pause-stream 0.0.11 to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\pause-stream
+844 silly install write writing map-stream 0.1.0 to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\map-stream
+845 silly cache addNamed cb map-stream@0.1.0
+846 verbose unbuild node_modules\camera\node_modules\event-stream\node_modules\map-stream
+847 verbose lock using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\split-e4928714be40b312.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\split
+848 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\duplexer is being purged from base C:\Users\workstation1\AppData\Roaming\npm
+849 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\duplexer
+850 verbose tar unpack C:\Users\workstation1\AppData\Roaming\npm-cache\through\2.3.8\package.tgz
+851 verbose tar unpacking to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\through
+852 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\through is being purged
+853 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\through
+854 verbose tar unpack C:\Users\workstation1\AppData\Roaming\npm-cache\from\0.1.3\package.tgz
+855 verbose tar unpacking to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\from
+856 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\from is being purged
+857 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\from
+858 silly install write writing split 0.2.10 to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\split
+859 silly cache addNamed cb split@0.2.10
+860 verbose unbuild node_modules\camera\node_modules\event-stream\node_modules\split
+861 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\stream-combiner is being purged from base C:\Users\workstation1\AppData\Roaming\npm
+862 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\stream-combiner
+863 verbose tar unpack C:\Users\workstation1\AppData\Roaming\npm-cache\duplexer\0.1.1\package.tgz
+864 verbose tar unpacking to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\duplexer
+865 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\duplexer is being purged
+866 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\duplexer
+867 silly gunzTarPerm modes [ '777', '666' ]
+868 silly gunzTarPerm modes [ '777', '666' ]
+869 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\map-stream is being purged from base C:\Users\workstation1\AppData\Roaming\npm
+870 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\map-stream
+871 verbose tar unpack C:\Users\workstation1\AppData\Roaming\npm-cache\stream-combiner\0.0.4\package.tgz
+872 verbose tar unpacking to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\stream-combiner
+873 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\stream-combiner is being purged
+874 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\stream-combiner
+875 silly gunzTarPerm modes [ '777', '666' ]
+876 verbose tar unpack C:\Users\workstation1\AppData\Roaming\npm-cache\map-stream\0.1.0\package.tgz
+877 verbose tar unpacking to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\map-stream
+878 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\map-stream is being purged
+879 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\map-stream
+880 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\split is being purged from base C:\Users\workstation1\AppData\Roaming\npm
+881 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\split
+882 silly gunzTarPerm modes [ '777', '666' ]
+883 silly gunzTarPerm modes [ '777', '666' ]
+884 verbose tar unpack C:\Users\workstation1\AppData\Roaming\npm-cache\split\0.2.10\package.tgz
+885 verbose tar unpacking to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\split
+886 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\split is being purged
+887 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\split
+888 silly cache addNamed cb pause-stream@0.0.11
+889 verbose unbuild node_modules\camera\node_modules\event-stream\node_modules\pause-stream
+890 silly gunzTarPerm modes [ '777', '666' ]
+891 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\pause-stream is being purged from base C:\Users\workstation1\AppData\Roaming\npm
+892 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\pause-stream
+893 verbose tar unpack C:\Users\workstation1\AppData\Roaming\npm-cache\pause-stream\0.0.11\package.tgz
+894 verbose tar unpacking to C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\pause-stream
+895 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\pause-stream is being purged
+896 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\pause-stream
+897 silly gunzTarPerm extractEntry package.json
+898 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+899 silly gunzTarPerm modes [ '777', '666' ]
+900 silly gunzTarPerm extractEntry package.json
+901 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+902 silly gunzTarPerm extractEntry package.json
+903 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+904 silly gunzTarPerm extractEntry .npmignore
+905 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+906 silly gunzTarPerm extractEntry index.js
+907 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+908 silly gunzTarPerm extractEntry package.json
+909 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+910 silly gunzTarPerm extractEntry package.json
+911 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+912 silly gunzTarPerm extractEntry package.json
+913 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+914 silly gunzTarPerm extractEntry package.json
+915 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+916 silly gunzTarPerm extractEntry .npmignore
+917 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+918 silly gunzTarPerm extractEntry README.md
+919 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+920 silly gunzTarPerm extractEntry index.js
+921 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+922 silly gunzTarPerm extractEntry .travis.yml
+923 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+924 silly gunzTarPerm extractEntry .npmignore
+925 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+926 silly gunzTarPerm extractEntry README.md
+927 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+928 silly gunzTarPerm extractEntry .npmignore
+929 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+930 silly gunzTarPerm extractEntry LICENCE
+931 silly gunzTarPerm modified mode [ 'LICENCE', 420, 438 ]
+932 silly gunzTarPerm extractEntry .npmignore
+933 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+934 silly gunzTarPerm extractEntry LICENSE
+935 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+936 silly gunzTarPerm extractEntry .npmignore
+937 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+938 silly gunzTarPerm extractEntry LICENCE
+939 silly gunzTarPerm modified mode [ 'LICENCE', 420, 438 ]
+940 silly gunzTarPerm extractEntry LICENSE.APACHE2
+941 silly gunzTarPerm modified mode [ 'LICENSE.APACHE2', 420, 438 ]
+942 silly gunzTarPerm extractEntry LICENSE.MIT
+943 silly gunzTarPerm modified mode [ 'LICENSE.MIT', 420, 438 ]
+944 silly gunzTarPerm extractEntry LICENCE
+945 silly gunzTarPerm modified mode [ 'LICENCE', 420, 438 ]
+946 silly gunzTarPerm extractEntry index.js
+947 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+948 silly gunzTarPerm extractEntry index.js
+949 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+950 silly gunzTarPerm extractEntry .travis.yml
+951 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+952 silly gunzTarPerm extractEntry index.js
+953 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+954 silly gunzTarPerm extractEntry readme.markdown
+955 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 438 ]
+956 silly gunzTarPerm extractEntry test/index.js
+957 silly gunzTarPerm modified mode [ 'test/index.js', 420, 438 ]
+958 silly gunzTarPerm extractEntry test/pause-end.js
+959 silly gunzTarPerm modified mode [ 'test/pause-end.js', 420, 438 ]
+960 silly gunzTarPerm extractEntry LICENSE.APACHE2
+961 silly gunzTarPerm modified mode [ 'LICENSE.APACHE2', 420, 438 ]
+962 silly gunzTarPerm extractEntry LICENSE.MIT
+963 silly gunzTarPerm modified mode [ 'LICENSE.MIT', 420, 438 ]
+964 silly gunzTarPerm extractEntry LICENSE
+965 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+966 silly gunzTarPerm extractEntry index.js
+967 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+968 silly gunzTarPerm extractEntry readme.markdown
+969 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 438 ]
+970 silly gunzTarPerm extractEntry test/index.js
+971 silly gunzTarPerm modified mode [ 'test/index.js', 420, 438 ]
+972 silly gunzTarPerm extractEntry index.js
+973 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+974 silly gunzTarPerm extractEntry .travis.yml
+975 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+976 silly gunzTarPerm extractEntry test/index.js
+977 silly gunzTarPerm modified mode [ 'test/index.js', 420, 438 ]
+978 silly gunzTarPerm extractEntry .travis.yml
+979 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+980 silly gunzTarPerm extractEntry examples/pretty.js
+981 silly gunzTarPerm modified mode [ 'examples/pretty.js', 420, 438 ]
+982 silly gunzTarPerm extractEntry readme.markdown
+983 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 438 ]
+984 silly gunzTarPerm extractEntry .travis.yml
+985 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+986 silly gunzTarPerm extractEntry test/index.js
+987 silly gunzTarPerm modified mode [ 'test/index.js', 420, 438 ]
+988 silly gunzTarPerm extractEntry examples/pretty.js
+989 silly gunzTarPerm modified mode [ 'examples/pretty.js', 420, 438 ]
+990 silly gunzTarPerm extractEntry readme.markdown
+991 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 438 ]
+992 silly gunzTarPerm extractEntry readme.markdown
+993 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 438 ]
+994 silly gunzTarPerm extractEntry test/async.js
+995 silly gunzTarPerm modified mode [ 'test/async.js', 420, 438 ]
+996 silly gunzTarPerm extractEntry test/partitioned_unicode.js
+997 silly gunzTarPerm modified mode [ 'test/partitioned_unicode.js', 420, 438 ]
+998 silly gunzTarPerm extractEntry test/split.asynct.js
+999 silly gunzTarPerm modified mode [ 'test/split.asynct.js', 420, 438 ]
+1000 silly gunzTarPerm extractEntry test/auto-destroy.js
+1001 silly gunzTarPerm modified mode [ 'test/auto-destroy.js', 420, 438 ]
+1002 silly gunzTarPerm extractEntry test/buffering.js
+1003 silly gunzTarPerm modified mode [ 'test/buffering.js', 420, 438 ]
+1004 silly gunzTarPerm extractEntry test/simple-map.asynct.js
+1005 silly gunzTarPerm modified mode [ 'test/simple-map.asynct.js', 420, 438 ]
+1006 silly gunzTarPerm extractEntry test/end.js
+1007 silly gunzTarPerm modified mode [ 'test/end.js', 420, 438 ]
+1008 silly gunzTarPerm extractEntry test/try_catch.asynct.js
+1009 silly gunzTarPerm modified mode [ 'test/try_catch.asynct.js', 420, 438 ]
+1010 silly gunzTarPerm extractEntry test/index.js
+1011 silly gunzTarPerm modified mode [ 'test/index.js', 420, 438 ]
+1012 info preinstall mkdirp@0.3.5
+1013 silly install resolved []
+1014 verbose about to build C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\coffee-script\node_modules\mkdirp
+1015 info build C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\coffee-script\node_modules\mkdirp
+1016 verbose linkStuff [ true,
+1016 verbose linkStuff   'C:\\Users\\workstation1\\AppData\\Roaming\\npm\\node_modules',
+1016 verbose linkStuff   false,
+1016 verbose linkStuff   'C:\\Users\\workstation1\\AppData\\Roaming\\npm\\node_modules\\camera\\node_modules\\coffee-script\\node_modules' ]
+1017 info linkStuff mkdirp@0.3.5
+1018 verbose linkBins mkdirp@0.3.5
+1019 verbose linkMans mkdirp@0.3.5
+1020 verbose rebuildBundles mkdirp@0.3.5
+1021 info install mkdirp@0.3.5
+1022 info postinstall mkdirp@0.3.5
+1023 verbose unlock done using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\mkdirp-69cd0ddd0a4e6ec8.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\coffee-script\node_modules\mkdirp
+1024 verbose about to build C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\coffee-script
+1025 info build C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\coffee-script
+1026 verbose linkStuff [ true,
+1026 verbose linkStuff   'C:\\Users\\workstation1\\AppData\\Roaming\\npm\\node_modules',
+1026 verbose linkStuff   false,
+1026 verbose linkStuff   'C:\\Users\\workstation1\\AppData\\Roaming\\npm\\node_modules\\camera\\node_modules' ]
+1027 info linkStuff coffee-script@1.7.1
+1028 info preinstall duplexer@0.1.1
+1029 verbose linkBins coffee-script@1.7.1
+1030 verbose link bins [ { coffee: './bin/coffee', cake: './bin/cake' },
+1030 verbose link bins   'C:\\Users\\workstation1\\AppData\\Roaming\\npm\\node_modules\\camera\\node_modules\\.bin',
+1030 verbose link bins   false ]
+1031 verbose linkMans coffee-script@1.7.1
+1032 verbose rebuildBundles coffee-script@1.7.1
+1033 info preinstall stream-combiner@0.0.4
+1034 verbose rebuildBundles [ 'mkdirp' ]
+1035 silly install resolved []
+1036 verbose about to build C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\duplexer
+1037 info build C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\duplexer
+1038 verbose linkStuff [ true,
+1038 verbose linkStuff   'C:\\Users\\workstation1\\AppData\\Roaming\\npm\\node_modules',
+1038 verbose linkStuff   false,
+1038 verbose linkStuff   'C:\\Users\\workstation1\\AppData\\Roaming\\npm\\node_modules\\camera\\node_modules\\event-stream\\node_modules' ]
+1039 info linkStuff duplexer@0.1.1
+1040 silly install resolved []
+1041 verbose about to build C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\stream-combiner
+1042 info build C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\stream-combiner
+1043 verbose linkStuff [ true,
+1043 verbose linkStuff   'C:\\Users\\workstation1\\AppData\\Roaming\\npm\\node_modules',
+1043 verbose linkStuff   false,
+1043 verbose linkStuff   'C:\\Users\\workstation1\\AppData\\Roaming\\npm\\node_modules\\camera\\node_modules\\event-stream\\node_modules' ]
+1044 info linkStuff stream-combiner@0.0.4
+1045 verbose linkBins duplexer@0.1.1
+1046 verbose linkMans duplexer@0.1.1
+1047 verbose rebuildBundles duplexer@0.1.1
+1048 verbose linkBins stream-combiner@0.0.4
+1049 verbose linkMans stream-combiner@0.0.4
+1050 verbose rebuildBundles stream-combiner@0.0.4
+1051 info install duplexer@0.1.1
+1052 info install stream-combiner@0.0.4
+1053 info postinstall duplexer@0.1.1
+1054 info postinstall stream-combiner@0.0.4
+1055 info preinstall from@0.1.3
+1056 verbose unlock done using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\duplexer-76f0d40b1011016f.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\duplexer
+1057 verbose unlock done using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\stream-combiner-30f9cf21fa45b1ec.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\stream-combiner
+1058 silly install resolved []
+1059 verbose about to build C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\from
+1060 info build C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\from
+1061 verbose linkStuff [ true,
+1061 verbose linkStuff   'C:\\Users\\workstation1\\AppData\\Roaming\\npm\\node_modules',
+1061 verbose linkStuff   false,
+1061 verbose linkStuff   'C:\\Users\\workstation1\\AppData\\Roaming\\npm\\node_modules\\camera\\node_modules\\event-stream\\node_modules' ]
+1062 info linkStuff from@0.1.3
+1063 verbose linkBins from@0.1.3
+1064 verbose linkMans from@0.1.3
+1065 verbose rebuildBundles from@0.1.3
+1066 info install from@0.1.3
+1067 info postinstall from@0.1.3
+1068 verbose unlock done using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\from-7c28b663828f994e.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\from
+1069 info preinstall pause-stream@0.0.11
+1070 info preinstall map-stream@0.1.0
+1071 silly install resolved []
+1072 verbose about to build C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\pause-stream
+1073 info build C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\pause-stream
+1074 verbose linkStuff [ true,
+1074 verbose linkStuff   'C:\\Users\\workstation1\\AppData\\Roaming\\npm\\node_modules',
+1074 verbose linkStuff   false,
+1074 verbose linkStuff   'C:\\Users\\workstation1\\AppData\\Roaming\\npm\\node_modules\\camera\\node_modules\\event-stream\\node_modules' ]
+1075 info linkStuff pause-stream@0.0.11
+1076 verbose linkBins pause-stream@0.0.11
+1077 verbose linkMans pause-stream@0.0.11
+1078 verbose rebuildBundles pause-stream@0.0.11
+1079 info install pause-stream@0.0.11
+1080 info install coffee-script@1.7.1
+1081 silly install resolved []
+1082 verbose about to build C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\map-stream
+1083 info build C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\map-stream
+1084 verbose linkStuff [ true,
+1084 verbose linkStuff   'C:\\Users\\workstation1\\AppData\\Roaming\\npm\\node_modules',
+1084 verbose linkStuff   false,
+1084 verbose linkStuff   'C:\\Users\\workstation1\\AppData\\Roaming\\npm\\node_modules\\camera\\node_modules\\event-stream\\node_modules' ]
+1085 info linkStuff map-stream@0.1.0
+1086 info postinstall pause-stream@0.0.11
+1087 info postinstall coffee-script@1.7.1
+1088 verbose linkBins map-stream@0.1.0
+1089 verbose linkMans map-stream@0.1.0
+1090 verbose rebuildBundles map-stream@0.1.0
+1091 info install map-stream@0.1.0
+1092 verbose unlock done using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\pause-stream-b1fad77b580eaee6.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\pause-stream
+1093 verbose unlock done using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\coffee-script-20be04cdcbc0a501.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\coffee-script
+1094 info postinstall map-stream@0.1.0
+1095 verbose unlock done using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\map-stream-39f83f11179fcf87.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\map-stream
+1096 info preinstall split@0.2.10
+1097 silly install resolved []
+1098 verbose about to build C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\split
+1099 info build C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\split
+1100 verbose linkStuff [ true,
+1100 verbose linkStuff   'C:\\Users\\workstation1\\AppData\\Roaming\\npm\\node_modules',
+1100 verbose linkStuff   false,
+1100 verbose linkStuff   'C:\\Users\\workstation1\\AppData\\Roaming\\npm\\node_modules\\camera\\node_modules\\event-stream\\node_modules' ]
+1101 info linkStuff split@0.2.10
+1102 verbose linkBins split@0.2.10
+1103 verbose linkMans split@0.2.10
+1104 verbose rebuildBundles split@0.2.10
+1105 info install split@0.2.10
+1106 info postinstall split@0.2.10
+1107 verbose unlock done using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\split-e4928714be40b312.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\split
+1108 info preinstall through@2.3.8
+1109 silly install resolved []
+1110 verbose about to build C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\through
+1111 info build C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\through
+1112 verbose linkStuff [ true,
+1112 verbose linkStuff   'C:\\Users\\workstation1\\AppData\\Roaming\\npm\\node_modules',
+1112 verbose linkStuff   false,
+1112 verbose linkStuff   'C:\\Users\\workstation1\\AppData\\Roaming\\npm\\node_modules\\camera\\node_modules\\event-stream\\node_modules' ]
+1113 info linkStuff through@2.3.8
+1114 verbose linkBins through@2.3.8
+1115 verbose linkMans through@2.3.8
+1116 verbose rebuildBundles through@2.3.8
+1117 info install through@2.3.8
+1118 info postinstall through@2.3.8
+1119 verbose unlock done using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\through-d7d1a3da89629144.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream\node_modules\through
+1120 verbose about to build C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream
+1121 info build C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream
+1122 verbose linkStuff [ true,
+1122 verbose linkStuff   'C:\\Users\\workstation1\\AppData\\Roaming\\npm\\node_modules',
+1122 verbose linkStuff   false,
+1122 verbose linkStuff   'C:\\Users\\workstation1\\AppData\\Roaming\\npm\\node_modules\\camera\\node_modules' ]
+1123 info linkStuff event-stream@3.1.7
+1124 verbose linkBins event-stream@3.1.7
+1125 verbose linkMans event-stream@3.1.7
+1126 verbose rebuildBundles event-stream@3.1.7
+1127 verbose rebuildBundles [ 'duplexer',
+1127 verbose rebuildBundles   'from',
+1127 verbose rebuildBundles   'map-stream',
+1127 verbose rebuildBundles   'pause-stream',
+1127 verbose rebuildBundles   'split',
+1127 verbose rebuildBundles   'stream-combiner',
+1127 verbose rebuildBundles   'through' ]
+1128 info install event-stream@3.1.7
+1129 info postinstall event-stream@3.1.7
+1130 verbose unlock done using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\event-stream-6180c75ccca4b74a.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\event-stream
+1131 info preinstall opencv@0.5.0
+1132 verbose unsafe-perm in lifecycle true
+1133 info opencv@0.5.0 Failed to exec preinstall script
+1134 verbose unlock done using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\opencv-41302b25a586bc93.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\opencv
+1135 verbose about to build C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera
+1136 verbose unlock done using C:\Users\workstation1\AppData\Roaming\npm-cache\_locks\camera-b7365ef27e95859f.lock for C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera
+1137 verbose stack Error: opencv@0.5.0 preinstall: `node-gyp clean rebuild`
+1137 verbose stack Exit status 1
+1137 verbose stack     at EventEmitter.<anonymous> (C:\Program Files (x86)\nodejs\node_modules\npm\lib\utils\lifecycle.js:213:16)
+1137 verbose stack     at EventEmitter.emit (events.js:110:17)
+1137 verbose stack     at ChildProcess.<anonymous> (C:\Program Files (x86)\nodejs\node_modules\npm\lib\utils\spawn.js:14:12)
+1137 verbose stack     at ChildProcess.emit (events.js:110:17)
+1137 verbose stack     at maybeClose (child_process.js:1015:16)
+1137 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+1138 verbose pkgid opencv@0.5.0
+1139 verbose cwd C:\Users\workstation1\Documents\Visual Studio 2015\Projects\hello
+1140 error Windows_NT 6.1.7601
+1141 error argv "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "camera"
+1142 error node v0.12.2
+1143 error npm  v2.7.4
+1144 error code ELIFECYCLE
+1145 error opencv@0.5.0 preinstall: `node-gyp clean rebuild`
+1145 error Exit status 1
+1146 error Failed at the opencv@0.5.0 preinstall script 'node-gyp clean rebuild'.
+1146 error This is most likely a problem with the opencv package,
+1146 error not with npm itself.
+1146 error Tell the author that this fails on your system:
+1146 error     node-gyp clean rebuild
+1146 error You can get their info via:
+1146 error     npm owner ls opencv
+1146 error There is likely additional logging output above.
+1147 verbose exit [ 1, true ]
+1148 verbose unbuild node_modules\camera\node_modules\opencv
+1149 info preuninstall opencv@0.5.0
+1150 info uninstall opencv@0.5.0
+1151 verbose unbuild rmStuff opencv@0.5.0 from C:\Users\workstation1\AppData\Roaming\npm\node_modules
+1152 verbose unbuild rmStuff in C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules
+1153 info postuninstall opencv@0.5.0
+1154 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\opencv is being purged from base C:\Users\workstation1\AppData\Roaming\npm
+1155 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\opencv
+1156 silly vacuum-fs purging C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules\opencv
+1157 silly vacuum-fs quitting because other entries in C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera\node_modules
+1158 verbose unbuild node_modules\camera
+1159 info preuninstall camera@0.0.5
+1160 info uninstall camera@0.0.5
+1161 verbose unbuild rmStuff camera@0.0.5 from C:\Users\workstation1\AppData\Roaming\npm\node_modules
+1162 info postuninstall camera@0.0.5
+1163 silly gentlyRm C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera is being purged from base C:\Users\workstation1\AppData\Roaming\npm
+1164 verbose gentlyRm don't care about contents; nuking C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera
+1165 silly vacuum-fs purging C:\Users\workstation1\AppData\Roaming\npm\node_modules\camera
+1166 silly vacuum-fs quitting because other entries in C:\Users\workstation1\AppData\Roaming\npm\node_modules
